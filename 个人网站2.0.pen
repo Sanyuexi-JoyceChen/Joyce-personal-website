@@ -1,0 +1,837 @@
+{
+  "version": "2.7",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "tCnSy",
+      "x": 0,
+      "y": 0,
+      "name": "Personal Website",
+      "width": 1440,
+      "fill": "#080808",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "gUJN7",
+          "name": "header",
+          "width": "fill_container",
+          "height": 100,
+          "padding": [
+            0,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "jWZuW",
+              "name": "logo",
+              "fill": "#FFFFFF",
+              "content": "SC.",
+              "fontFamily": "Times New Roman",
+              "fontSize": 24,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "Cb21a",
+              "name": "langSwitch",
+              "fill": "#666666",
+              "content": "EN / 中文",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EmBYB",
+          "name": "hero",
+          "width": "fill_container",
+          "height": 800,
+          "gap": 100,
+          "padding": [
+            0,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "d6FWW",
+              "name": "heroContent",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5zzFJ",
+                  "name": "h1",
+                  "fill": "#F2F2F2",
+                  "content": "Shaojin Chen",
+                  "lineHeight": 1,
+                  "fontFamily": "Times New Roman",
+                  "fontSize": 110,
+                  "fontWeight": "normal",
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "text",
+                  "id": "f1JJ3",
+                  "name": "h2",
+                  "fill": "#D4D4D8",
+                  "content": "AI Product Manager —\nBuilder for the AI Age",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Inter",
+                  "fontSize": 32,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "6ZQo9",
+                  "name": "tag",
+                  "fill": "#666666",
+                  "content": "Status: Building • Open to Work",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "jC8Zg",
+                  "name": "cta",
+                  "fill": "#f7c5d8ff",
+                  "cornerRadius": 100,
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "73sgO",
+                      "name": "ctaText",
+                      "fill": "#000000",
+                      "content": "View Work",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "a5k7N",
+              "name": "heroImgFrame",
+              "width": 540,
+              "height": 680,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "images/1770375030615.jpeg",
+                "mode": "fill"
+              },
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sCmxi",
+          "name": "expSection",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 60,
+          "padding": [
+            100,
+            64
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Gggpt",
+              "name": "expHeader",
+              "fill": "#c0def2ff",
+              "content": "EXPERIENCE",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "LpXvj",
+              "name": "expList",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DFvPW",
+                  "name": "item1",
+                  "width": "fill_container",
+                  "fill": "#111111",
+                  "cornerRadius": 8,
+                  "padding": 32,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cGMkf",
+                      "name": "role1",
+                      "fill": "#EAEAEA",
+                      "content": "Gensmo — AI Fashion PM",
+                      "fontFamily": "serif",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "otJbW",
+                      "name": "date1",
+                      "fill": "#666666",
+                      "content": "2025.10 – Present",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "64MfR",
+                  "name": "item2",
+                  "width": "fill_container",
+                  "fill": "#111111",
+                  "cornerRadius": 8,
+                  "padding": 32,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yUcpg",
+                      "name": "role2",
+                      "fill": "#EAEAEA",
+                      "content": "Atomic VC — AI Investment",
+                      "fontFamily": "serif",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lYSXD",
+                      "name": "date2",
+                      "fill": "#666666",
+                      "content": "2025.06 – 2025.10",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "23nVh",
+                  "name": "item3",
+                  "width": "fill_container",
+                  "fill": "#111111",
+                  "cornerRadius": 8,
+                  "padding": 32,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Esloc",
+                      "name": "role3",
+                      "fill": "#EAEAEA",
+                      "content": "Wanyi Health — AI Hardware",
+                      "fontFamily": "serif",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WtMLX",
+                      "name": "date3",
+                      "fill": "#666666",
+                      "content": "2024.07 – 2024.11",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9MA7h",
+                  "name": "item4",
+                  "width": "fill_container",
+                  "fill": "#111111",
+                  "cornerRadius": 8,
+                  "padding": 32,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZkNPe",
+                      "name": "role4",
+                      "fill": "#EAEAEA",
+                      "content": "BCG — PTA Consulting",
+                      "fontFamily": "serif",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PgTHa",
+                      "name": "date4",
+                      "fill": "#666666",
+                      "content": "2024.01 – 2024.03",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "G3YFd",
+                  "name": "item5",
+                  "width": "fill_container",
+                  "fill": "#111111",
+                  "cornerRadius": 8,
+                  "padding": 32,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b4UfA",
+                      "name": "role5",
+                      "fill": "#EAEAEA",
+                      "content": "Qiaodou Culture — Disney IP Product",
+                      "fontFamily": "serif",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "IwSLW",
+                      "name": "date5",
+                      "fill": "#666666",
+                      "content": "2023.06 – 2023.09",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NNBIR",
+          "name": "buildSection",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            64
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "RMmGD",
+              "name": "buildHeader",
+              "fill": "#EBCB8B",
+              "content": "BUILDS / VIBE CODING",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "Af6TR",
+              "name": "buildGrid",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PvDvU",
+                  "name": "card1",
+                  "width": 400,
+                  "fill": "#111111",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Y0YhO",
+                      "name": "img1",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": "#1A1A1A",
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "1o7gk",
+                      "name": "title1",
+                      "fill": "#EAEAEA",
+                      "content": "BP Assessment Agent",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "u69SZ",
+                      "name": "desc1",
+                      "fill": "#888888",
+                      "content": "Automated investment deck analysis with Coze.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iF4pQ",
+                  "name": "card2",
+                  "width": 400,
+                  "fill": "#111111",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "uDPHz",
+                      "name": "img2",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": "#1A1A1A",
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "c62DA",
+                      "name": "title2",
+                      "fill": "#EAEAEA",
+                      "content": "RedNote Workflow",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BKFbH",
+                      "name": "desc2",
+                      "fill": "#888888",
+                      "content": "Viral content analysis pipeline.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "br3lV",
+                  "name": "card3",
+                  "width": 400,
+                  "fill": "#111111",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sgEhO",
+                      "name": "img3",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": "#1A1A1A",
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "Gz7Sc",
+                      "name": "title3",
+                      "fill": "#EAEAEA",
+                      "content": "YC S25 Report",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "48rPU",
+                      "name": "desc3",
+                      "fill": "#888888",
+                      "content": "Data viz of 140+ startups.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RXC4c",
+                  "name": "card4",
+                  "width": 400,
+                  "fill": "#111111",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dsnga",
+                      "name": "img4",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": "#1A1A1A",
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "yhjvA",
+                      "name": "title4",
+                      "fill": "#EAEAEA",
+                      "content": "Finance Manager",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BxL3t",
+                      "name": "desc4",
+                      "fill": "#888888",
+                      "content": "Personal finance tracking website.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eWmtK",
+                  "name": "card5",
+                  "width": 400,
+                  "fill": "#111111",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sC35B",
+                      "name": "img5",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": "#1A1A1A",
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "UsLnm",
+                      "name": "title5",
+                      "fill": "#EAEAEA",
+                      "content": "Mood Log App",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "3QRXm",
+                      "name": "desc5",
+                      "fill": "#888888",
+                      "content": "Healing and emotion tracking.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JPvrL",
+                  "name": "card6",
+                  "width": 400,
+                  "fill": "#111111",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lInw2",
+                      "name": "img6",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": "#1A1A1A",
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "M7gsj",
+                      "name": "title6",
+                      "fill": "#EAEAEA",
+                      "content": "Time Trader",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "chlyb",
+                      "name": "desc6",
+                      "fill": "#888888",
+                      "content": "Personal time exchange platform.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zHMC0",
+          "name": "bwSection",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            64
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "NjdmD",
+              "name": "bwHeader",
+              "fill": "#EBCB8B",
+              "content": "BEYOND WORK",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "dW6nI",
+              "name": "bwList",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "loslt",
+                  "name": "bw1",
+                  "fill": "#CCCCCC",
+                  "content": "• Debate Champion & Best Debater",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "vA5Uc",
+                  "name": "bw2",
+                  "fill": "#CCCCCC",
+                  "content": "• Xiaohongshu Creator (2k+ followers)",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ix1qH",
+                  "name": "bw3",
+                  "fill": "#CCCCCC",
+                  "content": "• National Innovation Competition Bronze",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Sj0AU",
+                  "name": "bw4",
+                  "fill": "#CCCCCC",
+                  "content": "• Basketball & Board Games",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Uqd5Q",
+          "name": "footer",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "K7iCP",
+              "name": "footerLine",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#222222"
+            },
+            {
+              "type": "frame",
+              "id": "oWtHr",
+              "name": "footerContent",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Y0Lm2",
+                  "name": "contactCol",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OVPqG",
+                      "name": "contactTitle",
+                      "fill": "#EBCB8B",
+                      "content": "GET IN TOUCH",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "woc1Q",
+                      "name": "email",
+                      "fill": "#FFFFFF",
+                      "content": "shaojinchen0593@gmail.com",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YEDu7",
+                      "name": "phone",
+                      "fill": "#FFFFFF",
+                      "content": "+86 15201977685",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dNJ0Q",
+                  "name": "socialCol",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "imzYh",
+                      "name": "socialTitle",
+                      "fill": "#EBCB8B",
+                      "content": "SOCIALS",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "pTm6R",
+                      "name": "xhs",
+                      "fill": "#FFFFFF",
+                      "content": "Xiaohongshu @Shaojin",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ca3lp",
+                      "name": "podcast",
+                      "fill": "#FFFFFF",
+                      "content": "Podcast",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Jak39",
+              "name": "copy",
+              "fill": "#444444",
+              "content": "© 2026 Shaojin Chen. Built with Vibe.",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

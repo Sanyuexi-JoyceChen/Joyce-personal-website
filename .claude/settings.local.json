@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:jaquier.dev)",
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(file:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx vite:*)",
+      "Bash(claude mcp add:*)",
+      "Bash(gh repo view:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(git clone:*)"
+    ]
+  }
+}

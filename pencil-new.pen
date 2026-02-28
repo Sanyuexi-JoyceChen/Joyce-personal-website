@@ -1,0 +1,1650 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "TGsC0",
+      "x": 0,
+      "y": 0,
+      "name": "01 - Hero",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#1A1A1A",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "JMi8c",
+          "x": 43,
+          "y": 43,
+          "name": "Hero Inner",
+          "metadata": {
+            "type": "unsplash",
+            "username": "pajorstudio",
+            "link": "https://unsplash.com/@pajorstudio",
+            "author": "Dominik"
+          },
+          "clip": true,
+          "width": 1354,
+          "height": 814,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1758555226165-d97dfa049279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzE3NDA0MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 32,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center"
+        },
+        {
+          "type": "rectangle",
+          "cornerRadius": 32,
+          "id": "aG8pv",
+          "x": 43,
+          "y": 43,
+          "name": "Hero Overlay",
+          "fill": "#00000033",
+          "width": 1354,
+          "height": 814
+        },
+        {
+          "type": "frame",
+          "id": "Ok1D5",
+          "x": 43,
+          "y": 43,
+          "name": "Hero Text",
+          "width": 1354,
+          "height": 814,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "66hdS",
+              "name": "line1",
+              "fill": "#FFFFFF",
+              "content": "IN ORDER",
+              "lineHeight": 1.05,
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 96,
+              "letterSpacing": -2
+            },
+            {
+              "type": "frame",
+              "id": "j05kP",
+              "name": "line2frame",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ObXt7",
+                  "name": "line2to",
+                  "fill": "#FFFFFF",
+                  "content": "TO",
+                  "lineHeight": 1.05,
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 96,
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "text",
+                  "id": "S05xM",
+                  "name": "line2word",
+                  "fill": "$color-accent",
+                  "content": "BUILD",
+                  "lineHeight": 1.05,
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 96,
+                  "letterSpacing": -2
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Els77",
+              "name": "line3",
+              "fill": "#FFFFFF",
+              "content": "THE FUTURE",
+              "lineHeight": 1.05,
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 96,
+              "letterSpacing": -2
+            },
+            {
+              "type": "text",
+              "id": "AzuaF",
+              "name": "line4",
+              "fill": "#FFFFFF",
+              "content": "ONE LINE",
+              "lineHeight": 1.05,
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 96,
+              "letterSpacing": -2
+            },
+            {
+              "type": "text",
+              "id": "U0LKc",
+              "name": "line5",
+              "fill": "#FFFFFF",
+              "content": "AT A TIME.",
+              "lineHeight": 1.05,
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 96,
+              "letterSpacing": -2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gax0K",
+          "x": 370,
+          "y": 60,
+          "name": "Navbar",
+          "width": 700,
+          "height": 52,
+          "fill": "#00000040",
+          "cornerRadius": 24,
+          "padding": [
+            8,
+            24
+          ],
+          "justifyContent": "space_around",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "8Owv3",
+              "name": "nav1",
+              "fill": "#FFFFFF",
+              "content": "CYPRIEN",
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 13
+            },
+            {
+              "type": "text",
+              "id": "BGx0M",
+              "name": "nav2",
+              "fill": "#FFFFFFAA",
+              "content": "ABOUT ME",
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 13
+            },
+            {
+              "type": "text",
+              "id": "IHJds",
+              "name": "nav3",
+              "fill": "#FFFFFFAA",
+              "content": "PROJECTS",
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 13
+            },
+            {
+              "type": "text",
+              "id": "al1AR",
+              "name": "nav4",
+              "fill": "#FFFFFFAA",
+              "content": "AWARDS",
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 13
+            },
+            {
+              "type": "text",
+              "id": "diLpG",
+              "name": "nav5",
+              "fill": "#FFFFFFAA",
+              "content": "TESTIMONIALS",
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 13
+            },
+            {
+              "type": "text",
+              "id": "XKcOD",
+              "name": "nav6",
+              "fill": "#FFFFFFAA",
+              "content": "CONTACT",
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "YlTh8",
+      "x": 1600,
+      "y": 0,
+      "name": "02 - About Me",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#1A1A1A",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "QNpci",
+          "x": 43,
+          "y": 43,
+          "name": "About Inner",
+          "metadata": {
+            "type": "unsplash",
+            "username": "dada_design",
+            "link": "https://unsplash.com/@dada_design",
+            "author": "dada_design"
+          },
+          "clip": true,
+          "width": 1354,
+          "height": 814,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1653972233739-667468bbd5a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzE3NDA0Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 32,
+          "padding": 60
+        },
+        {
+          "type": "rectangle",
+          "cornerRadius": 32,
+          "id": "aUf0r",
+          "x": 43,
+          "y": 43,
+          "name": "About Overlay",
+          "fill": "#00000055",
+          "width": 1354,
+          "height": 814
+        },
+        {
+          "type": "frame",
+          "id": "Py7jO",
+          "x": 43,
+          "y": 43,
+          "name": "About Content",
+          "width": 1354,
+          "height": 814,
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 60,
+          "children": [
+            {
+              "type": "text",
+              "id": "8ES2V",
+              "name": "aboutTitle",
+              "fill": "#FFFFFF",
+              "content": "ABOUT ME",
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 48,
+              "letterSpacing": -1
+            },
+            {
+              "type": "frame",
+              "id": "IqBUa",
+              "name": "Stories Row",
+              "width": "fill_container",
+              "height": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "0VGIH",
+                  "name": "Story 1 - Child",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    24,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O5c0L",
+                      "name": "s1period",
+                      "fill": "$color-accent",
+                      "content": "2004 — 2019",
+                      "fontFamily": "Rubik Mono One",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "jUMPI",
+                      "name": "s1title",
+                      "fill": "#FFFFFF",
+                      "content": "When I was a child",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Rubik Mono One",
+                      "fontSize": 18
+                    },
+                    {
+                      "type": "text",
+                      "id": "rnq8L",
+                      "name": "s1desc",
+                      "fill": "#FFFFFFCC",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I was always curious about the world around me. I loved drawing, tinkering, and most of my questions began with \"how\" or \"why\". When I got my first video game console, something clicked.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Ledger",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "g0SXR",
+                      "name": "Progress Bar",
+                      "fill": "#FFFFFF40",
+                      "width": "fill_container",
+                      "height": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PSF0p",
+                  "name": "Story 2 - Teen",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    24,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QyaiH",
+                      "name": "s2period",
+                      "fill": "$color-accent",
+                      "content": "2019 — 2025",
+                      "fontFamily": "Rubik Mono One",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "k3GVg",
+                      "name": "s2title",
+                      "fill": "#FFFFFF",
+                      "content": "Reaching my teenage years",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Rubik Mono One",
+                      "fontSize": 18
+                    },
+                    {
+                      "type": "text",
+                      "id": "o3vcD",
+                      "name": "s2desc",
+                      "fill": "#FFFFFFCC",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I left my parents' home to live in the mountains and start an apprenticeship in computer science. There, I learned systems, networking, and the basics of software development.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Ledger",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "mW6ty",
+                      "name": "Progress Bar",
+                      "fill": "#FFFFFF",
+                      "width": "fill_container",
+                      "height": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zuRDy",
+                  "name": "Story 3 - Today",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    24,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "itfqb",
+                      "name": "s3period",
+                      "fill": "$color-accent",
+                      "content": "2025 — Today",
+                      "fontFamily": "Rubik Mono One",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "a1Isi",
+                      "name": "s3title",
+                      "fill": "#FFFFFF",
+                      "content": "Today",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Rubik Mono One",
+                      "fontSize": 18
+                    },
+                    {
+                      "type": "text",
+                      "id": "kFEaH",
+                      "name": "s3desc",
+                      "fill": "#FFFFFFCC",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I'm proud of the journey I've taken so far, but my eyes are still on tomorrow. I keep learning in specific fields to satisfy my curiosity, and I often dive into ambitious projects.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Ledger",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "Q1nDJ",
+                      "name": "Progress Bar",
+                      "fill": "#FFFFFF60",
+                      "width": "fill_container",
+                      "height": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Q2YW2",
+      "x": 3200,
+      "y": 0,
+      "name": "03 - Projects",
+      "clip": true,
+      "width": 1440,
+      "height": 1100,
+      "fill": "#1A1A1A",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "QGk1H",
+          "x": 43,
+          "y": 43,
+          "name": "Projects Content",
+          "width": 1354,
+          "height": 1014,
+          "layout": "vertical",
+          "padding": [
+            60,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "gqPEt",
+              "name": "projTitle",
+              "fill": "#FFFFFF",
+              "content": "PROJECTS",
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 48,
+              "letterSpacing": -1
+            },
+            {
+              "type": "frame",
+              "id": "cN6RJ",
+              "name": "projSpacer",
+              "width": "fill_container",
+              "height": 40
+            },
+            {
+              "type": "frame",
+              "id": "ESmDU",
+              "name": "Project 1 - Game Engine",
+              "width": "fill_container",
+              "height": 80,
+              "fill": "#222222",
+              "padding": [
+                0,
+                40
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "7VCPI",
+                  "name": "p1num",
+                  "fill": "#FFFFFF60",
+                  "content": "00-01",
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 24,
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "C37Et",
+                  "name": "p1title",
+                  "fill": "#FFFFFF",
+                  "content": "GAME ENGINE",
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 24
+                },
+                {
+                  "type": "icon_font",
+                  "id": "GfcKQ",
+                  "name": "p1arrow",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ssYXp",
+              "name": "P1 Expanded Content",
+              "width": "fill_container",
+              "fill": "#000000",
+              "gap": 24,
+              "padding": [
+                24,
+                40
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "iCMn3",
+                  "name": "P1 Desktop Screenshot",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "johnyvino",
+                    "link": "https://unsplash.com/@johnyvino",
+                    "author": "Johnyvino"
+                  },
+                  "clip": true,
+                  "width": 320,
+                  "height": 180,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1544794040-a6ab770bec83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzE3NDA0OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "sUJ7O",
+                  "name": "p1desc",
+                  "fill": "#FFFFFFCC",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Sprunk-engine is an open-source web game engine (available on npm) that I developed with some friends. We wanted a challenging, architecture-focused project, so we built a game engine with almost no external libraries. It lets developers create 2D browser games.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Ledger",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "WbpxK",
+                  "name": "P1 Mobile Screenshot",
+                  "clip": true,
+                  "width": 100,
+                  "height": 178,
+                  "fill": "#333333",
+                  "cornerRadius": 8
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zC5ym",
+              "name": "P1 View More",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#FFFFFF",
+              "padding": [
+                0,
+                40
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "o4uBy",
+                  "name": "p1linkText",
+                  "fill": "#000000",
+                  "content": "View more",
+                  "fontFamily": "Ledger",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "ShaEQ",
+              "name": "divider1",
+              "fill": "#333333",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "y65G0",
+              "name": "Project 2 - Find Your Tribe",
+              "width": "fill_container",
+              "height": 80,
+              "fill": "#1A1A1A",
+              "padding": [
+                0,
+                40
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kVfOk",
+                  "name": "p2num",
+                  "fill": "#FFFFFF60",
+                  "content": "00-02",
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 24,
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "Q5SKj",
+                  "name": "p2title",
+                  "fill": "#FFFFFF",
+                  "content": "FIND YOUR TRIBE",
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 24
+                },
+                {
+                  "type": "icon_font",
+                  "id": "jjAfr",
+                  "name": "p2arrow",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "45yxL",
+              "name": "divider2",
+              "fill": "#333333",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "kk4Xy",
+              "name": "Project 3 - Portfolio",
+              "width": "fill_container",
+              "height": 80,
+              "fill": "#1A1A1A",
+              "padding": [
+                0,
+                40
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "6A49L",
+                  "name": "p3num",
+                  "fill": "#FFFFFF60",
+                  "content": "00-03",
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 24,
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "Ia7HC",
+                  "name": "p3title",
+                  "fill": "#FFFFFF",
+                  "content": "PORTFOLIO",
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 24
+                },
+                {
+                  "type": "icon_font",
+                  "id": "KJQOp",
+                  "name": "p3arrow",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "Q9xoE",
+              "name": "divider3",
+              "fill": "#333333",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "pZGdG",
+              "name": "Project 4 - SeaCracker",
+              "width": "fill_container",
+              "height": 80,
+              "fill": "#1A1A1A",
+              "padding": [
+                0,
+                40
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lDnpc",
+                  "name": "p4num",
+                  "fill": "#FFFFFF60",
+                  "content": "00-04",
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 24,
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "f8VUB",
+                  "name": "p4title",
+                  "fill": "#FFFFFF",
+                  "content": "SEACRACKER",
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 24
+                },
+                {
+                  "type": "icon_font",
+                  "id": "kINAx",
+                  "name": "p4arrow",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "hTEFU",
+      "x": 0,
+      "y": 1100,
+      "name": "04 - Awards",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#1A1A1A",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "gAiei",
+          "x": 43,
+          "y": 43,
+          "name": "Awards Inner",
+          "metadata": {
+            "type": "unsplash",
+            "username": "lhardeleon",
+            "link": "https://unsplash.com/@lhardeleon",
+            "author": "Lhar Capili"
+          },
+          "clip": true,
+          "width": 1354,
+          "height": 814,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1709464223089-98f8badf0418?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzE3NDA1MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 32,
+          "layout": "none"
+        },
+        {
+          "type": "rectangle",
+          "cornerRadius": 32,
+          "id": "LCpC3",
+          "x": 43,
+          "y": 43,
+          "name": "Awards Overlay",
+          "fill": "#00000022",
+          "width": 1354,
+          "height": 814
+        },
+        {
+          "type": "frame",
+          "id": "82cs0",
+          "x": 43,
+          "y": 43,
+          "name": "Awards Content",
+          "width": 1354,
+          "height": 814,
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 60,
+          "children": [
+            {
+              "type": "text",
+              "id": "hkoMN",
+              "name": "awardsTitle",
+              "fill": "#FFFFFF",
+              "content": "AWARDS",
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 48,
+              "letterSpacing": -1
+            },
+            {
+              "type": "frame",
+              "id": "9W2cZ",
+              "name": "Awards Row",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "5rtmn",
+                  "name": "Award 1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "0FCsS",
+                      "name": "a1date",
+                      "fill": "#FFFFFF",
+                      "content": "2025",
+                      "fontFamily": "Rubik Mono One",
+                      "fontSize": 32
+                    },
+                    {
+                      "type": "text",
+                      "id": "uc5og",
+                      "name": "a1title",
+                      "fill": "#FFFFFF",
+                      "content": "Best diploma project",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Ledger",
+                      "fontSize": 20,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vFuIV",
+                      "name": "a1desc",
+                      "fill": "#FFFFFFCC",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "At the end of my higher education in application development, I received the cantonal award for the best final project. This project, combining development and cybersecurity, involved securing confidential data within a production software.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Ledger",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YGNhq",
+                  "name": "Award 2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yoQV0",
+                      "name": "a2date",
+                      "fill": "#FFFFFF",
+                      "content": "2019",
+                      "fontFamily": "Rubik Mono One",
+                      "fontSize": 32
+                    },
+                    {
+                      "type": "text",
+                      "id": "CJRtr",
+                      "name": "a2title",
+                      "fill": "#FFFFFF",
+                      "content": "Solidarity and comradeship",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Ledger",
+                      "fontSize": 20,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4gf9o",
+                      "name": "a2desc",
+                      "fill": "#FFFFFFCC",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "The year I completed my compulsory schooling, my teachers and the school administration agreed to create a special award for me, recognizing my social skills and my commitment to supporting classmates through academic difficulties.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Ledger",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BIjFY",
+          "x": 620,
+          "y": 600,
+          "name": "Trophy",
+          "clip": true,
+          "width": 200,
+          "height": 200,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1771740549015.png",
+            "mode": "fill"
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RhDl5",
+      "x": 1600,
+      "y": 1100,
+      "name": "05 - Testimonials",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#1A1A1A",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "k8QGb",
+          "x": 43,
+          "y": 43,
+          "name": "Testimonials Inner",
+          "metadata": {
+            "type": "unsplash",
+            "username": "wzzpbtch",
+            "link": "https://unsplash.com/@wzzpbtch",
+            "author": "a l"
+          },
+          "clip": true,
+          "width": 1354,
+          "height": 814,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1723366963836-1be5151604cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzE3NDA1NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 32,
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "6VuRE",
+          "x": 43,
+          "y": 43,
+          "name": "Testimonials Content",
+          "width": 1354,
+          "height": 814,
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 60,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "gmsvp",
+              "name": "testTitle",
+              "fill": "#FFFFFF",
+              "content": "TESTIMONIALS",
+              "fontFamily": "Rubik Mono One",
+              "fontSize": 48,
+              "letterSpacing": -1
+            },
+            {
+              "type": "frame",
+              "id": "cHqHj",
+              "name": "Testimonials Pill",
+              "clip": true,
+              "width": 900,
+              "height": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 400,
+              "layout": "vertical",
+              "gap": 32,
+              "padding": 48,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gmme8",
+                  "name": "Testimonial 1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "miZGj",
+                      "name": "t1quote",
+                      "fill": "#333333",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "&quot;Cyprien stood out for his professionalism, analytical mindset, and impressive learning agility. He consistently demonstrated autonomy, curiosity, and precision in his work. His reliability, enthusiasm, and drive for excellence make him a true asset.&quot;",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Ledger",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SjfyM",
+                      "name": "Writer 1",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "S7clf",
+                          "name": "t1avatar",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "mnaeemad",
+                            "link": "https://unsplash.com/@mnaeemad",
+                            "author": "Naeem Ad"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1740485863291-ddb9e1ba1fe1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzE3NDA1NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 40,
+                          "height": 40
+                        },
+                        {
+                          "type": "frame",
+                          "id": "8gio6",
+                          "name": "t1info",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dvIWK",
+                              "name": "t1stars",
+                              "fill": "$color-yellow",
+                              "content": "★★★★★",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "8avQ2",
+                              "name": "t1pos",
+                              "fill": "#666666",
+                              "content": "CEO of an E-Learning solutions company",
+                              "fontFamily": "Ledger",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "xjOVr",
+                  "name": "divT",
+                  "fill": "#E5E5E5",
+                  "width": 200,
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "fLuL4",
+                  "name": "Testimonial 2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DLxyf",
+                      "name": "t2quote",
+                      "fill": "#333333",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "&quot;Working with Cyprien was an excellent experience. He quickly understood our goals, aligned perfectly with the team, and brought valuable technical insight and structure to our workflow.&quot;",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Ledger",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "5u3wt",
+                      "name": "Writer 2",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "biOxA",
+                          "name": "t2avatar",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "ouch_media",
+                            "link": "https://unsplash.com/@ouch_media",
+                            "author": "John Simmons"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1622169804256-0eb6873ff441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzE3NDA1ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 40,
+                          "height": 40
+                        },
+                        {
+                          "type": "frame",
+                          "id": "T3Em2",
+                          "name": "t2info",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "RKSt3",
+                              "name": "t2stars",
+                              "fill": "$color-yellow",
+                              "content": "★★★★★",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "LPg9I",
+                              "name": "t2pos",
+                              "fill": "#666666",
+                              "content": "CEO of a healthcare software company",
+                              "fontFamily": "Ledger",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "7AnGp",
+                  "name": "divT2",
+                  "fill": "#E5E5E5",
+                  "width": 200,
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "UqmWH",
+                  "name": "Testimonial 3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "aVoeH",
+                      "name": "t3quote",
+                      "fill": "#333333",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "&quot;Cyprien approached every collaboration with professionalism, motivation, and genuine team spirit. His adaptability and reliability made him a pleasure to work with.&quot;",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Ledger",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "e2vVB",
+                      "name": "Writer 3",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "S6R7X",
+                          "name": "t3avatar",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "alexandermassph",
+                            "link": "https://unsplash.com/@alexandermassph",
+                            "author": "Alexander Mass"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1742569184536-77ff9ae46c99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzE3NDA1ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 40,
+                          "height": 40
+                        },
+                        {
+                          "type": "frame",
+                          "id": "l9K0O",
+                          "name": "t3info",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "SYekx",
+                              "name": "t3stars",
+                              "fill": "$color-yellow",
+                              "content": "★★★★★",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "7q2UX",
+                              "name": "t3pos",
+                              "fill": "#666666",
+                              "content": "CTO at a Medical Group",
+                              "fontFamily": "Ledger",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "86Rck",
+      "x": 3200,
+      "y": 1100,
+      "name": "06 - Contact",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#1A1A1A",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "w3nli",
+          "x": 43,
+          "y": 43,
+          "name": "Contact Inner",
+          "metadata": {
+            "type": "unsplash",
+            "username": "ajay_jana",
+            "link": "https://unsplash.com/@ajay_jana",
+            "author": "Ajay Kumar Jana"
+          },
+          "clip": true,
+          "width": 1354,
+          "height": 814,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1590840612786-19994f08c97a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzE3NDA1OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 32,
+          "layout": "none"
+        },
+        {
+          "type": "rectangle",
+          "cornerRadius": 32,
+          "id": "agjNC",
+          "x": 43,
+          "y": 43,
+          "name": "Contact Overlay",
+          "fill": "#00000030",
+          "width": 1354,
+          "height": 814
+        },
+        {
+          "type": "frame",
+          "id": "jWZZt",
+          "x": 43,
+          "y": 43,
+          "name": "Contact Content",
+          "width": 1354,
+          "height": 814,
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            60,
+            80
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "sY9mg",
+              "name": "Contact Info Grid",
+              "width": "fill_container",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yLiKA",
+                  "name": "Hire Me",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fzBBw",
+                      "name": "col1title",
+                      "fill": "#FFFFFF",
+                      "content": "HIRE ME",
+                      "fontFamily": "Rubik Mono One",
+                      "fontSize": 16
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "gunuL",
+                      "name": "col1divider",
+                      "fill": "#A3A3A3",
+                      "width": "fill_container",
+                      "height": 2,
+                      "stroke": {
+                        "thickness": 0,
+                        "fill": "transparent"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "XmNaU",
+                      "name": "col1email",
+                      "fill": "#FFFFFF",
+                      "content": "cyprien@jaquier.dev",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Ledger",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "m6k3v",
+                  "name": "Social",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FUTfd",
+                      "name": "col2title",
+                      "fill": "#FFFFFF",
+                      "content": "SOCIAL",
+                      "fontFamily": "Rubik Mono One",
+                      "fontSize": 16
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "6WhfD",
+                      "name": "col2divider",
+                      "fill": "#A3A3A3",
+                      "width": "fill_container",
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "K2YFg",
+                      "name": "col2link",
+                      "fill": "#FFFFFF",
+                      "content": "LinkedIn",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Ledger",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "A3O7V",
+                  "name": "Open Source",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dkD6l",
+                      "name": "col3title",
+                      "fill": "#FFFFFF",
+                      "content": "OPEN SOURCE",
+                      "fontFamily": "Rubik Mono One",
+                      "fontSize": 16
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "7TNV8",
+                      "name": "col3divider",
+                      "fill": "#A3A3A3",
+                      "width": "fill_container",
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "uRkyq",
+                      "name": "col3link1",
+                      "fill": "#FFFFFF",
+                      "content": "GitHub",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Ledger",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "S3Ls9",
+                      "name": "col3link2",
+                      "fill": "#FFFFFF",
+                      "content": "CodePen",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Ledger",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qzCQf",
+              "name": "CTA Block",
+              "width": "fill_container",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J0rjX",
+                  "name": "ctaLine1",
+                  "fill": "#FFFFFF",
+                  "content": "LET'S WORK",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 80,
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "text",
+                  "id": "fYB38",
+                  "name": "ctaLine2",
+                  "fill": "$color-accent",
+                  "content": "TOGETHER",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Rubik Mono One",
+                  "fontSize": 80,
+                  "letterSpacing": -2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "S9XRS",
+              "name": "Footer",
+              "width": "fill_container",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EbWxo",
+                  "name": "footerText",
+                  "fill": "#FFFFFF99",
+                  "content": "Built with Vue.js — Source code available on GitHub",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Ledger",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "color-accent": {
+      "type": "color",
+      "value": "#DE2E2E"
+    },
+    "color-black": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "color-dark-overlay": {
+      "type": "color",
+      "value": "#00000040"
+    },
+    "color-neutral-300": {
+      "type": "color",
+      "value": "#D4D4D4"
+    },
+    "color-neutral-400": {
+      "type": "color",
+      "value": "#A3A3A3"
+    },
+    "color-neutral-600": {
+      "type": "color",
+      "value": "#525252"
+    },
+    "color-white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "color-yellow": {
+      "type": "color",
+      "value": "#EAB308"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Ledger"
+    },
+    "font-display": {
+      "type": "string",
+      "value": "Rubik Mono One"
+    },
+    "padding-section": {
+      "type": "number",
+      "value": 43
+    },
+    "radius-section": {
+      "type": "number",
+      "value": 32
+    }
+  }
+}
