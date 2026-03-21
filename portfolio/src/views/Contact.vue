@@ -1,11 +1,14 @@
 <script setup>
-import { onMounted, ref, onBeforeUnmount } from 'vue';
+import { onMounted, ref, computed, onBeforeUnmount } from 'vue';
 import FramedMainSection from '@/layouts/FramedMainSection.vue';
 import { useScrollContext } from '@/composables/useScrollContext'
 import { AnimatedComponent } from '@/services/AnimatedComponent';
-import contact from '@/data/contact.json'
 import CustomA from '@/components/CustomA.vue';
 import Parallax from '@/components/Parallax.vue';
+import { useI18n } from '@/i18n';
+
+const { msg } = useI18n();
+const contact = computed(() => msg.value.contact);
 
 const component = ref(null)
 const frameRef = ref(null)
@@ -51,8 +54,8 @@ onBeforeUnmount(() => {
                 </div>
 
                 <div class="flex flex-col justify-center items-center text-[10dvw] leading-none w-full h-full font-rubik">
-                    <h1 class="text-white">Let's work</h1>
-                    <h1 class="text-red-custom z-10">together</h1>
+                    <h1 class="text-white">{{ msg.letsWork }}</h1>
+                    <h1 class="text-red-custom z-10">{{ msg.together }}</h1>
                 </div>
 
                 <div class="h-full w-full flex justify-center items-end absolute pointer-events-none bg-red-400a" :style="`transform: translateY(${translationRef}px)`">

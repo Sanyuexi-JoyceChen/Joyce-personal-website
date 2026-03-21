@@ -1,12 +1,15 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import FramedMainSection from '@/layouts/FramedMainSection.vue';
 import ToggleSection from '@/components/ToggleSection.vue';
 import { useSingleToggle } from '@/composables/useSingleToggle.js'
 import ImageAsCursor from '@/components/ImageAsCursor.vue';
 import { useImageAsCursor } from '@/composables/useImageAsCursor'
-import projects from '@/data/projects.json'
 import CustomA from '@/components/CustomA.vue';
+import { useI18n } from '@/i18n';
+
+const { msg } = useI18n();
+const projects = computed(() => msg.value.projects);
 
 const { setImage, setIsUrl, setIsOpen, setIsSmall } = useImageAsCursor()
 const { isOpen, toggle, openIndex } = useSingleToggle()
@@ -43,7 +46,7 @@ onMounted(() => {
                                     <img :src="project.mobile_pic" alt="" class="h-52 aspect-[9/16] hidden lg:block"/>
                                 </div>
                                 <a @mouseenter="setIsUrl(true)" @mouseleave="setIsUrl(false)" :href="project.link" class="relative w-full flex bg-center bg-cover bg-white" target="_blank">
-                                    <CustomA text="View more" :href="project.link" target="_blank" class="z-10 h-full w-full p-4"/>
+                                    <CustomA :text="msg.viewMore" :href="project.link" target="_blank" class="z-10 h-full w-full p-4"/>
                                 </a>
                             </div>
                         </div>

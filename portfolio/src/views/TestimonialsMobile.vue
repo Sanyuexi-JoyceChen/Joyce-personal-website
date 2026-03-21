@@ -1,7 +1,11 @@
 <script setup>
+import { computed } from 'vue';
 import FramedMainSection from '@/layouts/FramedMainSection.vue';
-import testimonials from '@/data/testimonials.json';
 import TestimonialWriterCard from '@/components/TestimonialWriterCard.vue';
+import { useI18n } from '@/i18n';
+
+const { msg } = useI18n();
+const testimonials = computed(() => msg.value.testimonials);
 </script>
 
 <template>

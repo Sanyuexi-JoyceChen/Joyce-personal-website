@@ -5,7 +5,9 @@ import CustomA from '@/components/CustomA.vue';
 import { AnimatedComponent } from '@/services/AnimatedComponent';
 import BurgerIcon from '@/icons/BurgerIcon.vue';
 import CrossIcon from '@/icons/CrossIcon.vue';
+import { useI18n } from '@/i18n';
 
+const { msg } = useI18n();
 const { containerRef, getSections, scroll } = useScrollContext();
 
 const component = ref();
@@ -18,7 +20,10 @@ const scrollTo = (e, section) => {
     scroll(section);
 }
 
-const sectionDisplayName = (id) => !id ? '' : (id === 'shaojin' || id === 'hero') ? 'Shaojin' : String(id).replace(/-/g, ' ');
+const sectionDisplayName = (id) => {
+    if (!id) return '';
+    return msg.value.nav[id] ?? String(id).replace(/-/g, ' ');
+};
 
 const computeIndicator = () => {
     const sections = getSections();

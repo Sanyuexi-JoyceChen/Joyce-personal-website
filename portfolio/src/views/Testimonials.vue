@@ -1,9 +1,12 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import FramedMainSection from '@/layouts/FramedMainSection.vue'
-import testimonials from '@/data/testimonials.json'
 import RotateOnScroll from '@/components/RotateOnScroll.vue'
 import TestimonialWriterCard from '@/components/TestimonialWriterCard.vue';
+import { useI18n } from '@/i18n';
+
+const { msg } = useI18n();
+const testimonials = computed(() => msg.value.testimonials);
 
 const frameRef = ref(null);
 const frameSectionRef = ref(null);

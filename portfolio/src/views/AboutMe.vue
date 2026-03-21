@@ -1,10 +1,13 @@
 <script setup>
 import FramedMainSection from '@/layouts/FramedMainSection.vue'
-import stories from '@/data/about-me.json'
 import { useScrollContext } from '@/composables/useScrollContext';
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 import FollowingFrame from '@/components/FollowingFrame.vue';
 import { AnimatedComponent } from '@/services/AnimatedComponent';
+import { useI18n } from '@/i18n';
+
+const { msg } = useI18n();
+const stories = computed(() => msg.value.aboutMe);
 
 const component = ref(null)
 const frameRef = ref(null)
@@ -77,22 +80,21 @@ onBeforeUnmount(() => {
                     <div class="h-1/2 w-full overflow-hidden px-[3dvw] z-10">
 
                         <div class="absolute h-6 z-30 flex items-center gap-2 text-white">
-                            <span class="w-10">{{ stories[currentSectionId].from }}</span>
+                            <span class="w-16">{{ stories[currentSectionId].from }}</span>
                             <div class="h-full w-40 flex items-center border-x-2">
                                 <div class="h-1 bg-white" :style="`width: ${sectionPercent}%`"></div>
                             </div>
-                            <span class="w-10">{{ stories[currentSectionId].to }}</span>
+                            <span class="w-16">{{ stories[currentSectionId].to }}</span>
                         </div>
 
                         <div ref="contentRef" class="h-full w-full transition-transform duration-400 text-white">
-                            <div v-for="story in stories" class="h-full w-full aspect-square flex items-end justify-end gap-6">
-                                <div class="flex gap-2 flex-col">
+                            <div v-for="story in stories" class="h-full w-full flex items-end gap-6">
+                                <div class="flex gap-2 flex-col w-1/2">
                                     <h1 class="font-bold text-xl leading-none font-rubik">{{ story.when }}</h1>
                                     <p class="flex-1 h-fit">
                                         {{ story.description }}
                                     </p>
                                 </div>
-                                <img :src="story.image" alt="" class="mr-0 md:mr-[6dvw] lg:mr-[12dvw] w-fit aspect-[9/16] max-h-full object-contain object-bottom"/>
                             </div>
                         </div>
                     </div>

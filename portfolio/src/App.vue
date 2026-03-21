@@ -17,6 +17,9 @@ import { useCursorContext } from '@/composables/useCursorContext';
 import { useWindowContext } from '@/composables/useWindowContext';
 import { ref, onMounted } from 'vue';
 import { AnimatedComponent } from '@/services/AnimatedComponent';
+import { useI18n } from '@/i18n';
+
+const { msg } = useI18n();
 
 const { containerRef, contentRef } = provideScrollContext();
 const { setPositions } = useCursorContext();
@@ -45,7 +48,7 @@ onMounted(async () => {
 <template>
   <section id="loading"
     class="outline-[100dvw] outline-white rounded-[999px] bg-transparent h-0 w-0 fixed top-1/2 left-1/2 z-[100] -translate-1/2 flex items-center justify-center">
-    <span class="absolute font-ledger h-40 w-96 flex justify-center items-center">The paint is drying...</span>
+    <span class="absolute font-ledger h-40 w-96 flex justify-center items-center">{{ msg.loading }}</span>
   </section>
   <ScrollBar />
   <LiquidFilter />
@@ -64,7 +67,7 @@ onMounted(async () => {
       <Contact />
       <footer class="relative">
         <span class="absolute bottom-0 text-sm p-[4dvw] opacity-60 text-white">
-          <CustomA text="Read the code here" href="https://github.com/Cyprien-png/portfolio" target="_blank" />
+          <CustomA :text="msg.readCode" href="https://github.com/Cyprien-png/portfolio" target="_blank" />
         </span>
       </footer>
     </div>

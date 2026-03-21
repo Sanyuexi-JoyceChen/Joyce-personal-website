@@ -1,7 +1,11 @@
 <script setup>
+import { computed } from 'vue';
 import FramedMainSection from '@/layouts/FramedMainSection.vue';
-import awards from '@/data/awards.json';
 import Parallax from '@/components/Parallax.vue';
+import { useI18n } from '@/i18n';
+
+const { msg } = useI18n();
+const awards = computed(() => msg.value.awards);
 </script>
 
 <template>
