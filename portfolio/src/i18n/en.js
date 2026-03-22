@@ -25,28 +25,28 @@ export default {
     {
       image: "/about/gensmo.png",
       when: "AI Product Intern | GENSMO",
-      description: "GENSMO is a leading AI fashion app in North America with over a million downloads. I led two core initiatives: building the Couple Try-on feature from zero to one, which achieved the highest next-day retention across the app (35\u201340%) with 10+ generations per user; and owning iterations for Savyo, an independent web product, where I identified key pain points through user feedback, designed image-text Refine and a guided homepage, boosting image search usage to 60% and detail page click-through from 15% to 20%.",
+      description: "GENSMO is a leading AI fashion app in North America with over a million downloads. I led two core initiatives: building Couple Try-on, a dual AI try-on feature from zero to one that achieved the app's highest next-day retention; and iterating on Savyo, an independent web product where I identified key user pain points and designed solutions to help validate PMF in its seed stage.",
       from: "2025.10",
-      to: "2026.02"
+      to: "Present"
     },
     {
       image: "/about/atom.png",
       when: "AI Investment Intern | Atom VC",
-      description: "At Atom VC, I focused on angel-round investments in the AI sector. To address the high-volume, low-efficiency bottleneck in BP screening, I designed a BP Scoring Agent on Coze that reduced per-project initial screening time from 4 hours to 1 hour. I also built a GitHub deal sourcing system, a YC S25 project insights dashboard, and an automated industry news workflow using tools like Cursor, Octoparse, and n8n \u2014 freeing the team to focus on deeper analysis. On the research side, I completed two reports on open-source project investment strategy and AI Infra sub-sectors. During my internship, I participated in evaluating 50+ projects, followed 3 into due diligence, and 1 was successfully invested.",
+      description: "At Atom VC, I focused on angel-round AI investments. To tackle inefficient BP screening, I built a Scoring Agent on Coze that boosted efficiency several times over. I also developed a GitHub project mapping system, accelerator portfolio analysis, and an automated news workflow using Cursor, Octoparse, and n8n. I authored two reports on open-source investment strategy and AI Infra sub-sectors, and followed 50+ project evaluations with deals successfully invested.",
       from: "2025.06",
       to: "2025.10"
     },
     {
       image: "/about/bcg.png",
       when: "PTA Intern | BCG",
-      description: "At BCG, I contributed to a strategic growth project for an apparel industry client. My work centered on desk research \u2014 reviewing and analyzing extensive industry materials, mapping the brand's category logic, product architecture, and competitor positioning to provide data and analytical support for the client's pricing and marketing strategy decisions.",
+      description: "At BCG, I joined a strategic growth project for a consumer goods client. My work focused on desk research \u2014 analyzing industry materials, mapping brand category logic, product architecture, and competitor positioning to support pricing and marketing decisions.",
       from: "2024.01",
       to: "2024.03"
     },
     {
       image: "/about/qiaodou.png",
       when: "Content Product Intern | Qiaodou Culture",
-      description: "At Qiaodou Culture, I worked on Zootopia One Paw \u2014 an interactive entertainment mini-program built for Shanghai Disneyland based on the Zootopia IP. Starting with competitive analysis, I studied numerous Disney and Universal Studios IP digital product cases and produced strategy reports tailored to the target audience. I then deeply participated in product planning, designing the user nurturing system and AR park exploration features. After launch, the mini-program accumulated over 2.5 million users, with the Zootv creative trailer garnering 210K+ likes on Xiaohongshu.",
+      description: "At Qiaodou Culture, I worked on Zootopia One Paw \u2014 an interactive mini-program for Shanghai Disneyland based on the Zootopia IP. I led competitive analysis across IP digital products, then designed the user nurturing system and AR park exploration features. The mini-program reached 2.5M+ users, with its Zootv trailer earning 210K+ likes on Xiaohongshu.",
       from: "2023.06",
       to: "2023.09"
     }

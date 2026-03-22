@@ -76,18 +76,18 @@ onBeforeUnmount(() => {
         <FollowingFrame v-if="frameSectionRef" :contentSection="frameSectionRef">
             <div ref="topRef" class="h-full w-full bg-white p-[3dvw]">
                 <div class="h-full w-full relative flex justify-center items-center rounded-4xl overflow-hidden">
-                    <div class="absolute h-full w-full top-0 left-0 bg-[url('/backgrounds/room.jpg')] bg-cover bg-bottom"></div>
+                    <div class="absolute h-full w-full top-0 left-0 bg-[url('/backgrounds/实习经历背景.jpg')] bg-cover bg-bottom"></div>
                     <div class="h-1/2 w-full overflow-hidden px-[3dvw] z-10">
 
-                        <div class="absolute h-6 z-30 flex items-center gap-2 text-white">
+                        <div class="absolute h-6 z-30 flex items-center gap-2 text-[#3E2723]">
                             <span class="w-16">{{ stories[currentSectionId].from }}</span>
-                            <div class="h-full w-40 flex items-center border-x-2">
-                                <div class="h-1 bg-white" :style="`width: ${sectionPercent}%`"></div>
+                            <div class="h-full w-40 flex items-center border-x-2 border-[#3E2723]">
+                                <div class="h-1 bg-[#3E2723]" :style="`width: ${sectionPercent}%`"></div>
                             </div>
                             <span class="w-16">{{ stories[currentSectionId].to }}</span>
                         </div>
 
-                        <div ref="contentRef" class="h-full w-full transition-transform duration-400 text-white">
+                        <div ref="contentRef" class="h-full w-full transition-transform duration-400 text-[#3E2723]">
                             <div v-for="story in stories" class="h-full w-full flex items-end gap-6">
                                 <div class="flex gap-2 flex-col w-1/2">
                                     <h1 class="font-bold text-xl leading-none font-rubik">{{ story.when }}</h1>

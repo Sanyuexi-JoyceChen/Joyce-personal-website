@@ -80,24 +80,7 @@ const init = () => {
 
 const loadImageAndCreateParticles = () => {
   const img = new Image();
-  img.crossOrigin = "Anonymous";
-  const imageUrl = "https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAERUklponbJyA3krLmdkwk9jN-IgdbYHwAClBsAAgdJGFXIpMPVH3nhkDoE.png";
-
-  img.src = `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(imageUrl)}`;
-
-  let fallbackAttempted = 0;
-  img.onerror = () => {
-    if (fallbackAttempted === 0) {
-      fallbackAttempted++;
-      img.src = `https://api.allorigins.win/raw?url=${encodeURIComponent(imageUrl)}`;
-    } else if (fallbackAttempted === 1) {
-      fallbackAttempted++;
-      img.src = `https://corsproxy.io/?${encodeURIComponent(imageUrl)}`;
-    } else if (fallbackAttempted === 2) {
-      fallbackAttempted++;
-      img.src = imageUrl;
-    }
-  };
+  img.src = "/backgrounds/mountains.jpg";
 
   img.onload = () => {
     const canvas = document.createElement('canvas');
