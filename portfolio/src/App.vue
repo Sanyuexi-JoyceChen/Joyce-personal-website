@@ -84,7 +84,7 @@ onMounted(async () => {
   <audio ref="bgmRef" src="/Joycebgm.mp3" loop preload="auto"></audio>
   <button
     @click="toggleBgm"
-    class="bgm-btn fixed bottom-5 right-5 z-50 w-8 h-8 rounded-full flex items-center justify-center text-white/30 hover:text-white/70 transition-all duration-300 cursor-pointer"
+    class="bgm-btn fixed bottom-5 right-5 z-50 w-8 h-8 rounded-full flex items-center justify-center bg-white/10 text-white/40 hover:bg-white/20 hover:text-white/70 backdrop-blur-sm transition-all duration-300 cursor-pointer"
     :title="bgmPlaying ? 'Mute' : 'Play music'"
   >
     <svg v-if="bgmPlaying" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
