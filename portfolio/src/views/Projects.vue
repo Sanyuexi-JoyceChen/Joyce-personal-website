@@ -6,6 +6,7 @@ import { useSingleToggle } from '@/composables/useSingleToggle.js'
 import ImageAsCursor from '@/components/ImageAsCursor.vue';
 import { useImageAsCursor } from '@/composables/useImageAsCursor'
 import CustomA from '@/components/CustomA.vue';
+import RetroMonitor from '@/components/RetroMonitor.vue';
 import { useI18n } from '@/i18n';
 
 const { msg } = useI18n();
@@ -23,7 +24,7 @@ onMounted(() => {
 
 <template>
     <ImageAsCursor v-if="containerRef" :contentSection="containerRef" />
-    <FramedMainSection ref="frameRef" id="projects" :class="'min-h-[100dvh] flex h-auto'">
+    <FramedMainSection ref="frameRef" id="vibe-coding" :class="'min-h-[100dvh] flex h-auto'">
         <div class="flex-1 w-full bg-fit flex flex-col text-center pt-20">
             <div class="w-full h-full flex flex-col">
                 <ToggleSection v-for="(project, pi) in projects" :key="pi" :open="isOpen(pi)" @toggle="toggle(pi)"
@@ -40,10 +41,16 @@ onMounted(() => {
                         <div class="px-6 pb-6">
                             <div
                                 class="relative w-full text-black overflow-hidden flex flex-col items-start gap-6 h-fit">
-                                <div class="gap-4 flex items-center flex-col lg:flex-row">
-                                    <img :src="project.desktop_pic" alt="" class="w-full lg:w-auto lg:h-52 object-contain"/>
-                                    <p class="z-20 min-h-full w-full text-white p-4 text-left">{{ project.description }}</p>
-                                    <img :src="project.mobile_pic" alt="" class="h-52 aspect-[9/16] hidden lg:block"/>
+                                <div class="gap-8 flex items-center flex-col lg:flex-row w-full my-4 lg:my-8">
+                                    <RetroMonitor 
+                                        :images="project.images" 
+                                        :desktopPic="project.desktop_pic" 
+                                        :mobilePic="project.mobile_pic" 
+                                    />
+                                    <div class="w-full lg:w-1/2 z-20 text-white p-4 text-left">
+                                        <p class="text-base lg:text-lg" v-html="project.description"></p>
+                                        <p v-if="project.stage" class="text-xs lg:text-sm text-white/60 mt-3">{{ project.stage }}</p>
+                                    </div>
                                 </div>
                                 <a @mouseenter="setIsUrl(true)" @mouseleave="setIsUrl(false)" :href="project.link" class="relative w-full flex bg-center bg-cover bg-white" target="_blank">
                                     <CustomA :text="msg.viewMore" :href="project.link" target="_blank" class="z-10 h-full w-full p-4"/>

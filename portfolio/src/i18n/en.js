@@ -3,15 +3,14 @@ export default {
   langToggle: "中",
   nav: {
     joyce: "Joyce",
-    "about-me": "about me",
-    projects: "projects",
-    awards: "awards",
-    testimonials: "testimonials",
+    career: "career",
+    "vibe-coding": "vibe coding",
+    "ai-tools": "AI tools",
     contact: "contact"
   },
   hero: {
     line1: "In order",
-    line2prefix: "to ",
+    line2prefix: "to\u00A0",
     line3: "the AI Native",
     line4: "future.",
     rotatingWords: ['Build', 'Invest', 'Explore', 'All in']
@@ -27,7 +26,7 @@ export default {
       when: "AI Product Intern | GENSMO",
       description: "GENSMO is a leading AI fashion app in North America with over a million downloads. I led two core initiatives: building Couple Try-on, a dual AI try-on feature from zero to one that achieved the app's highest next-day retention; and iterating on Savyo, an independent web product where I identified key user pain points and designed solutions to help validate PMF in its seed stage.",
       from: "2025.10",
-      to: "Present"
+      to: "2026.02"
     },
     {
       image: "/about/atom.png",
@@ -54,96 +53,79 @@ export default {
 
   projects: [
     {
-      title: "Game Engine",
-      description: "Sprunk-engine is an open-source web game engine (available on npm) that I developed with some friends. We wanted a challenging, architecture-focused project, so we built a game engine with almost no external libraries. It lets developers create 2D browser games, and we made two demo games available on the official website. I worked on our custom math library, the 2D physics engine, and I'm now developing a new 3D physics engine. This project helped me deepen my understanding of algorithms, optimization, mathematics, and open-source collaboration.",
-      link: "https://sprunk-engine.com/",
-      background: "/projects/sprunk/background.jpg",
-      mobile_pic: "/projects/sprunk/web.png",
-      desktop_pic: "/projects/sprunk/template.jpg"
-    },
-    {
-      title: "Find your tribe",
-      description: "Find your tribe is a small project inspired by a music festival I attended abroad with friends. With over 60,000 people per day, it was nearly impossible to find each other once the group split up due to the crowd, noise, and lack of landmarks. The app solves this by letting users create groups to chat, see each other's live locations, set and share map landmarks, and use 3D arrows powered by the phone's gyroscope to point directly to their friends in real time. The 3D arrow feature is built using my modular \u201Cgame engine\u201D project.",
-      link: "https://github.com/orgs/retrouve-ta-tribu/repositories",
-      background: "/projects/find-your-tribe/background.jpg",
-      mobile_pic: "/projects/find-your-tribe/map.png",
-      desktop_pic: "/projects/find-your-tribe/irl.jpg"
-    },
-    {
       title: "Portfolio",
-      description: "The portfolio project is the website you're on right now. While many of my projects focus on architecture, algorithms, and data science, I've always had a strong passion for frontend development. I've long dreamed of becoming a \u201CCreative Developer,\u201D and I regularly explore awwwards.com for inspiration and to study the techniques behind advanced visual effects. This portfolio is both a way to present my work and a way to stay true to that ambition. If you have any suggestions or feedback, feel free to reach out!",
-      link: "https://github.com/Cyprien-png/portfolio",
-      background: "/backgrounds/mountains.jpg",
-      mobile_pic: "/projects/portfolio/contact.png",
-      desktop_pic: "/projects/portfolio/home.jpg"
+      description: "Portfolio is the website you're browsing right now. I believe the best way to introduce yourself in the AI era is \"show, don't tell\" — and that's how this personal site came to be. It reflects my attitude, aesthetics, and practice, serving as the best proof that I'm an AI builder. This site is built on the open-source project <a href='https://github.com/Cyprien-png/portfolio' target='_blank' class='underline hover:text-white/80'>jaquier.dev</a> — thanks to its contributors.",
+      stage: "Status: Deployed & Live",
+      link: "https://github.com/Sanyuexi-JoyceChen/Joyce-personal-website",
+      background: "/projects/portfolio-images/background.jpg",
+      desktop_pic: "/projects/portfolio-images/home.png",
+      mobile_pic: ""
     },
     {
-      title: "SeaCracker",
-      description: "SeaCracker is another open-source project I built with the same team as the game engine, a few months earlier. We wanted to explore design patterns and web app architecture, so we created a Kahoot-like platform where users can build quizzes and play them in live sessions. The host presents each question, while players join with their phones and submit answers like a remote control. A leaderboard is shown between questions to keep things engaging. This project introduced me to state machines, event-driven architecture, and gave me my first real experience with WebSockets.",
-      link: "https://github.com/orgs/SeaCrackers/repositories",
-      background: "/projects/sea-cracker/background.jpg",
-      mobile_pic: "/projects/sea-cracker/answer.png",
-      desktop_pic: "/projects/sea-cracker/question.jpg"
+      title: "Poker Analysis",
+      description: "A data-driven review tool to help poker beginners improve their game. When I first started playing Texas Hold'em, I found there was no free tool for beginners to review hand histories and improve decision quality — so I built one. It imports hand histories exported from PokerNow, automatically parses them, and performs preflop decision auditing, postflop loss analysis, and GTO comparison to help identify and correct decision-making issues. Built with React Native + Expo, supporting iOS / Android / Web.",
+      stage: "Status: Deployed & Live",
+      link: "https://pokeranalysis.vercel.app/",
+      background: "/projects/pokeranalysis/background.jpg",
+      images: ["/projects/pokeranalysis/home.png", "/projects/pokeranalysis/loading.png", "/projects/pokeranalysis/pokeranalysis-3.png", "/projects/pokeranalysis/pokeranalysis-4.png"],
+      mobile_pic: "",
+      desktop_pic: ""
+    },
+    {
+      title: "FIRE Simulator",
+      description: "This personal finance tool solves two questions I had: where does my money go, and how long until I can FIRE (Financial Independence, Retire Early)? A personal finance mini-tool: just upload your transaction CSV exported from WeChat Pay or Alipay — no manual logging needed. It automatically summarizes spending by category, estimates monthly expenses, and highlights the biggest single expenditures. Then enter your savings, annual income, and expected investment returns, and it estimates how many years until you reach FIRE and your current progress.",
+      stage: "Status: Personal Use, Local Deployment",
+      link: "",
+      background: "/projects/fire-simulator/background.jpg",
+      desktop_pic: "/projects/fire-simulator/screenshot-1.png",
+      mobile_pic: "/projects/fire-simulator/screenshot-2.png"
     }
   ],
 
-  awards: [
-    {
-      title: "Best diploma project",
-      description: "At the end of my higher education in application development, I received the cantonal award for the best final project. This project, combining development and cybersecurity, involved securing confidential data within a production software.",
-      date: "2025"
-    },
-    {
-      title: "Solidarity and comradeship",
-      description: "The year I completed my compulsory schooling, my teachers and the school administration agreed to create a special award for me, recognizing my social skills and my commitment to supporting classmates through academic difficulties.",
-      date: "2019"
-    }
-  ],
-
-  testimonials: [
-    {
-      writer_image: "/testimonials/man-1.jpg",
-      writer_position: "CEO of an E-Learning solutions company",
-      stars: 5,
-      description: "Joyce stood out for his professionalism, analytical mindset, and impressive learning agility. He consistently demonstrated autonomy, curiosity, and precision in his work. His reliability, enthusiasm, and drive for excellence make him a true asset in any collaboration. I can confidently recommend him to anyone seeking a skilled, motivated, and forward-thinking professional."
-    },
-    {
-      writer_image: "/testimonials/man-2.jpg",
-      writer_position: "CEO of a healthcare software company",
-      stars: 5,
-      description: "Working with Joyce was an excellent experience. He quickly understood our goals, aligned perfectly with the team, and brought valuable technical insight and structure to our workflow. His proactive mindset, clarity in communication, and ability to turn ideas into tangible results made a lasting impact. Joyce is someone you can trust to deliver, both technically and creatively."
-    },
-    {
-      writer_image: "/testimonials/man-3.jpg",
-      writer_position: "CTO at a Medical Group",
-      stars: 5,
-      description: "Joyce approached every collaboration with professionalism, motivation, and genuine team spirit. His adaptability and reliability made him a pleasure to work with, and his commitment to quality was evident in everything he delivered. Highly dedicated and always eager to contribute, he consistently exceeded expectations and brought a positive energy to every project."
-    }
-  ],
+  aiTools: {
+    title: "AI Toolkit",
+    subtitle: "AI products and tools I use and love — each one has changed how I work in its own way.",
+    tools: [
+      { name: "Claude Code", logoDomain: "anthropic.com", url: "https://docs.anthropic.com/en/docs/claude-code", desc: "AI coding terminal — the ceiling for code understanding and generation", large: true },
+      { name: "Notion AI", logoDomain: "notion.so", url: "https://notion.so", desc: "Notes and knowledge management, supercharged by AI", large: true },
+      { name: "NotebookLM", logoDomain: "notebooklm.google.com", url: "https://notebooklm.google.com", desc: "By Google — chat with docs and generate audio summaries", large: false },
+      { name: "Typeless", logoDomain: "typeless.com", url: "https://typeless.com", desc: "AI voice dictation — speak 4x faster than you type", large: true },
+      { name: "Pencil", logoDomain: "pencil.dev", url: "https://www.pencil.dev", desc: "Design on canvas, land in code", large: false },
+      { name: "Den", logoDomain: "getden.io", url: "https://getden.io", desc: "Build AI agents in natural language, zero code automation", large: true },
+      { name: "Google AI Studio", logoDomain: "aistudio.google.com", url: "https://aistudio.google.com", desc: "Google's model playground — Gemini series all in one place", large: false },
+      { name: "Cursor", logoDomain: "cursor.com", url: "https://cursor.com", desc: "The AI-native code editor for the next era", large: false },
+      { name: "LongCut", logoDomain: "longcut.ai", url: "https://www.longcut.ai", desc: "The best way to learn from long videos", large: true },
+      { name: "Excalicord", logoDomain: "excalicord.com", url: "https://www.excalicord.com", desc: "Whiteboard + screen recording — draw to explain", large: false }
+    ]
+  },
 
   contact: {
     "Hire me": [
       {
-        text: "joyce@example.com",
-        href: "mailto:joyce@example.com"
+        text: "shaojinchen0593@gmail.com",
+        href: "mailto:shaojinchen0593@gmail.com"
+      },
+      {
+        text: "+86 15201977685",
+        href: "tel:+8615201977685"
       }
     ],
     "Social": [
       {
         text: "LinkedIn",
-        href: "https://www.linkedin.com/in/joyce",
+        href: "https://www.linkedin.com/in/shaojin-chen-5a6192321",
+        target: "_blank"
+      },
+      {
+        text: "Rednote",
+        href: "https://xhslink.com/m/5aRYvNntylm",
         target: "_blank"
       }
     ],
     "Open source": [
       {
         text: "GitHub",
-        href: "https://github.com/joyce",
-        target: "_blank"
-      },
-      {
-        text: "CodePen",
-        href: "https://codepen.io/joyce",
+        href: "https://github.com/Sanyuexi-JoyceChen",
         target: "_blank"
       }
     ]

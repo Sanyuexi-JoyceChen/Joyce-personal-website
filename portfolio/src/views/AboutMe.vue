@@ -71,12 +71,12 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <FramedMainSection ref="frameRef" id="about-me" class="min-h-[100dvh] flex items-center relative">
+    <FramedMainSection ref="frameRef" id="career" class="min-h-[100dvh] flex items-center relative">
         <!-- Frame -->
         <FollowingFrame v-if="frameSectionRef" :contentSection="frameSectionRef">
             <div ref="topRef" class="h-full w-full bg-white p-[3dvw]">
                 <div class="h-full w-full relative flex justify-center items-center rounded-4xl overflow-hidden">
-                    <div class="absolute h-full w-full top-0 left-0 bg-[url('/backgrounds/实习经历背景.jpg')] bg-cover bg-bottom"></div>
+                    <div class="absolute h-full w-full top-0 left-0 bg-[url('/backgrounds/career.jpg')] bg-cover bg-bottom"></div>
                     <div class="h-1/2 w-full overflow-hidden px-[3dvw] z-10">
 
                         <div class="absolute h-6 z-30 flex items-center gap-2 text-[#3E2723]">

@@ -8,9 +8,9 @@ const stories = computed(() => msg.value.aboutMe);
 </script>
 
 <template>
-    <FramedMainSection id="about-me" class="min-h-[100dvh] flex relative">
+    <FramedMainSection id="career" class="min-h-[100dvh] flex relative">
         <div
-            class="h-full w-full rounded-4xl bg-[url('/backgrounds/实习经历背景.jpg')] bg-cover bg-right text-[#3E2723] flex justify-center items-end text-center p-4">
+            class="h-full w-full rounded-4xl bg-[url('/backgrounds/career.jpg')] bg-cover bg-right text-[#3E2723] flex justify-center items-end text-center p-4">
             <div class="grid grid-cols-1 md:grid-cols-3">
 
                 <div v-for="(story, i) in stories" :key="i"

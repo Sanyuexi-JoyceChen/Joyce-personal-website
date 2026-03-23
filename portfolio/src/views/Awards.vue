@@ -5,25 +5,71 @@ import Parallax from '@/components/Parallax.vue';
 import { useI18n } from '@/i18n';
 
 const { msg } = useI18n();
-const awards = computed(() => msg.value.awards);
+const aiTools = computed(() => msg.value.aiTools);
+
+const logoUrl = (domain) => `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
 </script>
 
 <template>
-     <FramedMainSection id="awards" class="h-dvh">
-        <Parallax>
-        <div class="h-full w-full relative overflow-hidden rounded-4xl text-white flex justify-center items-start md:items-end text-center p-4">
-            <div class="absolute h-full w-full bg-[url('/awards/sky.jpg')] bg-cover top-0 left-0 -z-10 overflow-visible">
-                <div data-parallax-value=".02" class="parallax absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-video w-[130dvw] bg-center bg-cover bg-[url('/awards/clouds.png')]"></div>
-                <img src="/awards/trophy.png" alt="" data-parallax-value=".15" class="parallax w-full absolute scale-200 -bottom-1/12 sm:scale-125 md:scale-150 lg:scale-125 lg:-bottom-1/3">
-            </div>
-            <div class="flex flex-col md:flex-row">
-                <div v-for="award in awards" class="h-fit flex-1 p-4 flex flex-col items-start cursor-default text-left">
-                    <span class="font-rubik">{{award.date}}</span>
-                    <h1 class="font-rubik text-xl italic">{{award.title}}</h1>
-                    <p>{{award.description}}</p>
-                </div>
-            </div>
+  <FramedMainSection id="ai-tools" class="h-dvh">
+    <Parallax>
+      <div class="h-full w-full relative overflow-hidden rounded-4xl text-white">
+        <!-- Background: Monet painting -->
+        <div class="absolute inset-0 -z-10">
+          <div class="h-full w-full bg-[url('/ai-tools/background.jpg')] bg-cover bg-center"></div>
         </div>
+
+        <!-- Scrollable content layer -->
+        <div class="ai-tools-scroll relative z-10 h-full overflow-y-auto p-5 md:p-8 flex flex-col gap-4">
+          <!-- Section header -->
+          <div class="flex-shrink-0">
+            <h2 class="font-rubik text-xl md:text-2xl lg:text-3xl uppercase">
+              {{ aiTools.title }}
+            </h2>
+            <p class="text-white/80 mt-1 text-sm max-w-md">{{ aiTools.subtitle }}</p>
+          </div>
+
+          <!-- Bento Grid -->
+          <div class="bento-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <a
+              v-for="tool in aiTools.tools"
+              :key="tool.name"
+              :href="tool.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group relative rounded-3xl filter before:rounded-3xl before:pointer-events-none backdrop-filter-[url('#liquidFilter')] p-5 flex flex-col justify-between transition-all duration-300 hover:scale-[1.02] cursor-pointer overflow-hidden"
+              :class="{
+                'sm:col-span-2': tool.large,
+                'min-h-[160px]': tool.large,
+                'min-h-[140px]': !tool.large
+              }"
+            >
+              <div class="absolute inset-0 w-full h-full bg-black opacity-25 -z-10 rounded-3xl"></div>
+              <div class="relative z-10">
+                <div class="flex items-center justify-between mb-3">
+                  <img
+                    :src="logoUrl(tool.logoDomain)"
+                    :alt="tool.name"
+                    class="w-10 h-10 rounded-xl object-contain bg-white/10 p-1.5"
+                  />
+                  <span class="text-white/20 text-lg group-hover:text-white/70 group-hover:-rotate-45 transition-all duration-300">↗</span>
+                </div>
+                <h3 class="font-rubik text-xs md:text-sm">{{ tool.name }}</h3>
+                <p class="text-white/75 text-xs md:text-sm mt-1.5 leading-relaxed">{{ tool.desc }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </Parallax>
-    </FramedMainSection>
+  </FramedMainSection>
 </template>
+
+<style scoped>
+.ai-tools-scroll::-webkit-scrollbar {
+  display: none;
+}
+.ai-tools-scroll {
+  scrollbar-width: none;
+}
+</style>

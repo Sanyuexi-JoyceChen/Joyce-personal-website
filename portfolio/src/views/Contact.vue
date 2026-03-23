@@ -38,11 +38,7 @@ onBeforeUnmount(() => {
     <FramedMainSection ref="frameRef" id="contact" class="h-dvh">
         <Parallax>
             <div ref="contactSectionRef" class="h-full w-full relative rounded-4xl flex flex-col pt-24">
-                <div class="absolute h-full w-full top-0 left-0 rounded-4xl brightness-[.85] bg-[url('/contact/sky.jpeg')] bg-cover -z-10 overflow-hidden">
-                    <div class="h-full w-full flex justify-center items-end relative">
-                        <img src="/contact/mountains.png" alt="" data-parallax-value=".005" class="absolute h-auto  w-full scale-110 object-cover parallax"/>
-                        <img src="/contact/path.png" alt="" data-parallax-value=".025" class="absolute h-auto w-full translate-y-1/3 scale-110 object-cover parallax"/>
-                    </div>
+                <div class="absolute h-full w-full top-0 left-0 rounded-4xl brightness-[.85] bg-[url('/contact/background.jpg')] bg-cover bg-center -z-10 overflow-hidden">
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8 px-8 text-white">
                     <div v-for="(value, key) in contact" :key="key" class="h-full w-full">
@@ -58,10 +54,9 @@ onBeforeUnmount(() => {
                     <h1 class="text-red-custom z-10">{{ msg.together }}</h1>
                 </div>
 
-                <div class="h-full w-full flex justify-center items-end absolute pointer-events-none bg-red-400a" :style="`transform: translateY(${translationRef}px)`">
-                    <div class="max-h-full relative w-2/3 md:w-full aspect-[9/16]">
-                        <img src="/contact/body.png" alt="" data-parallax-value=".15" class="absolute h-full w-full top-0 left-0 object-contain parallax"/>
-                        <img src="/contact/arm.png" alt="" data-parallax-value=".17" class="absolute h-full w-full top-0 left-0 object-contain parallax"/>
+                <div class="h-full w-full flex justify-center items-end absolute bottom-0 pointer-events-none" :style="`transform: translateY(${translationRef}px)`">
+                    <div class="relative w-2/3 md:w-1/2 lg:w-2/5">
+                        <img src="/contact/portrait.png" alt="" data-parallax-value=".15" class="w-full h-auto object-contain parallax"/>
                     </div>
                 </div>
             </div>

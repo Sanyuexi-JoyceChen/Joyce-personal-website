@@ -8,8 +8,6 @@ import AboutMe from '@/views/AboutMe.vue';
 import AboutMeMobile from '@/views/AboutMeMobile.vue';
 import Projects from '@/views/Projects.vue';
 import Awards from '@/views/Awards.vue';
-import Testimonials from '@/views/Testimonials.vue';
-import TestimonialsMobile from '@/views/TestimonialsMobile.vue';
 import Contact from '@/views/Contact.vue';
 import CustomA from '@/components/CustomA.vue';
 import { provideScrollContext } from '@/composables/useScrollContext';
@@ -62,8 +60,6 @@ onMounted(async () => {
       <AboutMeMobile v-else />
       <Projects />
       <Awards />
-      <Testimonials v-if="md" />
-      <TestimonialsMobile v-else />
       <Contact />
       <footer class="relative">
         <span class="absolute bottom-0 text-sm p-[4dvw] opacity-60 text-white">

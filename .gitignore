@@ -26,14 +26,21 @@ pnpm-debug.log*
 *.sw?
 .env
 
-# Cursor / Claude (optional - remove if you want to include)
-# .cursor/
-# .claude/
+# Cursor / Claude
+.cursor/
+.claude/
 
 # Test
 coverage/
 /cypress/videos/
 /cypress/screenshots/
 
-# Pencil - .pen files are binary/encrypted
-# *.pen
+# Personal / process files (not part of the open-source project)
+*.jpeg
+*.pen
+*.pdf
+images/
+Gensmo*
+3d*
+GitHub*.md
+简历*.md

@@ -3,22 +3,21 @@ export default {
   langToggle: "EN",
   nav: {
     joyce: "Joyce",
-    "about-me": "关于我",
-    projects: "项目",
-    awards: "荣誉",
-    testimonials: "评价",
+    career: "Career",
+    "vibe-coding": "Vibe Coding",
+    "ai-tools": "AI 工具",
     contact: "联系"
   },
   hero: {
     line1: "In order",
-    line2prefix: "to ",
+    line2prefix: "to\u00A0",
     line3: "the AI Native",
     line4: "future.",
     rotatingWords: ['Build', 'Invest', 'Explore', 'All in']
   },
   viewMore: "查看更多",
-  letsWork: "一起",
-  together: "合作吧",
+  letsWork: "Let's work",
+  together: "together",
   readCode: "查看源代码",
 
   aboutMe: [
@@ -27,7 +26,7 @@ export default {
       when: "AI 产品实习生 | GENSMO",
       description: "GENSMO 是北美 AI 时尚应用赛道的头部产品，下载量超百万。我在这里主导了两个核心方向。一是从零到一搭建 Couple Try-on 双人 AI 试衣功能，次日留存达到全 App 内最高。二是负责独立 Web 端产品 Savyo 的功能迭代，我通过用户行为分析挖掘出「精准表达难」与「首页信息过载」两大痛点，设计了图文混合 Refine 与引导式首页方案，帮助产品在种子期快速验证 PMF。",
       from: "2025.10",
-      to: "至今"
+      to: "2026.02"
     },
     {
       image: "/about/atom.png",
@@ -54,96 +53,79 @@ export default {
 
   projects: [
     {
-      title: "游戏引擎",
-      description: "Sprunk-engine 是一个开源的网页游戏引擎（可在 npm 上获取），由我和几位朋友共同开发。我们想要一个具有挑战性的、以架构为核心的项目，因此我们几乎不使用外部库就构建了一个游戏引擎。它允许开发者创建 2D 浏览器游戏，我们在官方网站上发布了两个演示游戏。我负责了自定义数学库、2D 物理引擎，目前正在开发新的 3D 物理引擎。这个项目帮助我深入理解了算法、优化、数学和开源协作。",
-      link: "https://sprunk-engine.com/",
-      background: "/projects/sprunk/background.jpg",
-      mobile_pic: "/projects/sprunk/web.png",
-      desktop_pic: "/projects/sprunk/template.jpg"
+      title: "Portfolio",
+      description: "Portfolio 就是你现在浏览的这个网站。我相信AI时代介绍自己的最好方式是\"show，don't tell\"，于是诞生了这个个人网站。它展现了我的态度、审美、实践，这是最好的证明自己是个AI builder的方式。这个网站的搭建是基于开源项目 <a href='https://github.com/Cyprien-png/portfolio' target='_blank' class='underline hover:text-white/80'>jaquier.dev</a>，感谢它的贡献。",
+      stage: "项目阶段：已部署上线",
+      link: "https://github.com/Sanyuexi-JoyceChen/Joyce-personal-website",
+      background: "/projects/portfolio-images/background.jpg",
+      desktop_pic: "/projects/portfolio-images/home.png",
+      mobile_pic: ""
     },
     {
-      title: "找到你的伙伴",
-      description: "\"找到你的伙伴\"是一个灵感来源于我和朋友出国参加音乐节的小项目。每天超过 6 万人的场地，一旦人群分散，由于噪音和缺少地标，几乎不可能找到彼此。这个应用让用户可以创建群组聊天、查看彼此的实时位置、设置和分享地图标记，并使用手机陀螺仪驱动的 3D 箭头实时指向朋友的方向。3D 箭头功能使用了我的模块化「游戏引擎」项目。",
-      link: "https://github.com/orgs/retrouve-ta-tribu/repositories",
-      background: "/projects/find-your-tribe/background.jpg",
-      mobile_pic: "/projects/find-your-tribe/map.png",
-      desktop_pic: "/projects/find-your-tribe/irl.jpg"
+      title: "Poker Analysis",
+      description: "这是一个帮助德扑新手用数据复盘提升水平的工具。我刚开始接触德州扑克时，发现对于新手而言，没有免费的可以帮助自己复盘回忆每局手牌的行动并改善决策质量的工具，所以自己做了一个。网站支持导入 PokerNow 导出的手牌历史，自动解析并进行翻前决策审计、翻后损失分析和 GTO 对比，辅助发现和纠正决策问题。基于 React Native + Expo，支持 iOS / Android / Web 三端。",
+      stage: "项目阶段：部署上线",
+      link: "https://pokeranalysis.vercel.app/",
+      background: "/projects/pokeranalysis/background.jpg",
+      images: ["/projects/pokeranalysis/home.png", "/projects/pokeranalysis/loading.png", "/projects/pokeranalysis/pokeranalysis-3.png", "/projects/pokeranalysis/pokeranalysis-4.png"],
+      mobile_pic: "",
+      desktop_pic: ""
     },
     {
-      title: "个人作品集",
-      description: "作品集项目就是你现在浏览的这个网站。虽然我的许多项目专注于架构、算法和数据科学，但我一直对前端开发有着浓厚的热情。我一直梦想成为一名「创意开发者」，经常浏览 awwwards.com 寻找灵感并研究高级视觉效果背后的技术。这个作品集既是展示我工作的方式，也是践行这一抱负的方式。如果你有任何建议或反馈，欢迎联系我！",
-      link: "https://github.com/Cyprien-png/portfolio",
-      background: "/backgrounds/mountains.jpg",
-      mobile_pic: "/projects/portfolio/contact.png",
-      desktop_pic: "/projects/portfolio/home.jpg"
-    },
-    {
-      title: "SeaCracker",
-      description: "SeaCracker 是我和游戏引擎团队在几个月前一起开发的另一个开源项目。我们想探索设计模式和 Web 应用架构，于是创建了一个类似 Kahoot 的平台，用户可以构建问答游戏并在实时会话中进行。主持人展示每道题目，玩家用手机加入并像遥控器一样提交答案。题目之间会显示排行榜以保持参与度。这个项目让我接触了状态机、事件驱动架构，也是我第一次真正使用 WebSocket 的经历。",
-      link: "https://github.com/orgs/SeaCrackers/repositories",
-      background: "/projects/sea-cracker/background.jpg",
-      mobile_pic: "/projects/sea-cracker/answer.png",
-      desktop_pic: "/projects/sea-cracker/question.jpg"
+      title: "FIRE模拟器",
+      description: "这个财务管理工具解决了我自己的两个问题：我的钱花在哪儿了？多久可以FIRE？【Financial Independence, Retire Early（财务自由、提前退休）】个人财务小工具：你只要上传从微信或支付宝导出的账单 CSV，不用逐笔记账。它会自动帮你汇总钱花在了哪些类型、每月大概花多少，并挑出最烧钱的单笔支出。你再填上存款、年收入和预期投资回报率，它就会估算还要多少年能达到 FIRE（财务自由）和当前进度。",
+      stage: "项目阶段：自用、本地部署",
+      link: "",
+      background: "/projects/fire-simulator/background.jpg",
+      desktop_pic: "/projects/fire-simulator/screenshot-1.png",
+      mobile_pic: "/projects/fire-simulator/screenshot-2.png"
     }
   ],
 
-  awards: [
-    {
-      title: "最佳毕业项目",
-      description: "在应用开发高等教育结束时，我获得了州级最佳毕业项目奖。这个项目结合了开发和网络安全，涉及在生产软件中保护机密数据。",
-      date: "2025"
-    },
-    {
-      title: "团结互助奖",
-      description: "在我完成义务教育的那一年，老师和学校管理层一致同意为我设立一个特别奖项，以表彰我的社交能力以及帮助同学克服学业困难的贡献。",
-      date: "2019"
-    }
-  ],
-
-  testimonials: [
-    {
-      writer_image: "/testimonials/man-1.jpg",
-      writer_position: "电子学习解决方案公司 CEO",
-      stars: 5,
-      description: "Joyce 以其专业精神、分析思维和出色的学习能力脱颖而出。他始终展现出自主性、好奇心和工作中的精确度。他的可靠性、热情和追求卓越的动力使他成为任何合作中的真正资产。我可以自信地向任何寻求技能出色、积极进取、具有前瞻性思维的专业人士推荐他。"
-    },
-    {
-      writer_image: "/testimonials/man-2.jpg",
-      writer_position: "医疗软件公司 CEO",
-      stars: 5,
-      description: "与 Joyce 合作是一次出色的体验。他很快理解了我们的目标，与团队完美配合，并为我们的工作流程带来了有价值的技术见解和结构。他的主动性、沟通的清晰度以及将想法转化为切实成果的能力产生了持久的影响。Joyce 是一个你可以信任的人，无论是在技术上还是在创意上。"
-    },
-    {
-      writer_image: "/testimonials/man-3.jpg",
-      writer_position: "医疗集团 CTO",
-      stars: 5,
-      description: "Joyce 以专业精神、积极性和真诚的团队精神对待每一次合作。他的适应性和可靠性使与他共事成为一种愉快的体验，他对质量的承诺在他交付的每一项工作中都显而易见。他高度敬业，总是渴望做出贡献，始终超越期望，为每个项目带来积极的能量。"
-    }
-  ],
+  aiTools: {
+    title: "AI 工具集",
+    subtitle: "我日常使用和喜爱的 AI 产品与工具，每一个都在某个领域改变了我的工作方式。",
+    tools: [
+      { name: "Claude Code", logoDomain: "anthropic.com", url: "https://docs.anthropic.com/en/docs/claude-code", desc: "AI 编程终端，代码理解与生成的天花板", large: true },
+      { name: "Notion AI", logoDomain: "notion.so", url: "https://notion.so", desc: "笔记与知识管理的 AI 升级", large: true },
+      { name: "NotebookLM", logoDomain: "notebooklm.google.com", url: "https://notebooklm.google.com", desc: "Google 出品，文档对话与音频摘要神器", large: false },
+      { name: "Typeless", logoDomain: "typeless.com", url: "https://typeless.com", desc: "AI 语音听写，说话比打字快 4 倍", large: true },
+      { name: "Pencil", logoDomain: "pencil.dev", url: "https://www.pencil.dev", desc: "在画布上设计，直接落地为代码", large: false },
+      { name: "Den", logoDomain: "getden.io", url: "https://getden.io", desc: "自然语言构建 AI Agent，零代码自动化", large: true },
+      { name: "Google AI Studio", logoDomain: "aistudio.google.com", url: "https://aistudio.google.com", desc: "Google 模型实验场，Gemini 系列一站体验", large: false },
+      { name: "Cursor", logoDomain: "cursor.com", url: "https://cursor.com", desc: "AI 驱动的下一代代码编辑器", large: false },
+      { name: "LongCut", logoDomain: "longcut.ai", url: "https://www.longcut.ai", desc: "从长视频中高效学习的最佳方式", large: true },
+      { name: "Excalicord", logoDomain: "excalicord.com", url: "https://www.excalicord.com", desc: "白板 + 录屏，画着讲更清楚", large: false }
+    ]
+  },
 
   contact: {
     "联系我": [
       {
-        text: "joyce@example.com",
-        href: "mailto:joyce@example.com"
+        text: "shaojinchen0593@gmail.com",
+        href: "mailto:shaojinchen0593@gmail.com"
+      },
+      {
+        text: "+86 15201977685",
+        href: "tel:+8615201977685"
       }
     ],
     "社交媒体": [
       {
         text: "LinkedIn",
-        href: "https://www.linkedin.com/in/joyce",
+        href: "https://www.linkedin.com/in/shaojin-chen-5a6192321",
+        target: "_blank"
+      },
+      {
+        text: "小红书",
+        href: "https://xhslink.com/m/5aRYvNntylm",
         target: "_blank"
       }
     ],
     "开源项目": [
       {
         text: "GitHub",
-        href: "https://github.com/joyce",
-        target: "_blank"
-      },
-      {
-        text: "CodePen",
-        href: "https://codepen.io/joyce",
+        href: "https://github.com/Sanyuexi-JoyceChen",
         target: "_blank"
       }
     ]
