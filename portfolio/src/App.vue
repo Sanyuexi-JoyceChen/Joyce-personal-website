@@ -63,7 +63,7 @@ onMounted(async () => {
       <Contact />
       <footer class="relative">
         <span class="absolute bottom-0 text-sm p-[4dvw] opacity-60 text-white">
-          <CustomA :text="msg.readCode" href="https://github.com/Cyprien-png/portfolio" target="_blank" />
+          <CustomA :text="msg.readCode" href="https://github.com/Sanyuexi-JoyceChen/Joyce-personal-website" target="_blank" />
         </span>
       </footer>
     </div>

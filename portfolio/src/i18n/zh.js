@@ -22,28 +22,24 @@ export default {
 
   aboutMe: [
     {
-      image: "/about/gensmo.png",
       when: "AI 产品实习生 | GENSMO",
       description: "GENSMO 是北美 AI 时尚应用赛道的头部产品，下载量超百万。我在这里主导了两个核心方向。一是从零到一搭建 Couple Try-on 双人 AI 试衣功能，次日留存达到全 App 内最高。二是负责独立 Web 端产品 Savyo 的功能迭代，我通过用户行为分析挖掘出「精准表达难」与「首页信息过载」两大痛点，设计了图文混合 Refine 与引导式首页方案，帮助产品在种子期快速验证 PMF。",
       from: "2025.10",
       to: "2026.02"
     },
     {
-      image: "/about/atom.png",
       when: "AI 投资实习生 | 原子创投",
       description: "在原子创投，我聚焦 AI 赛道的天使轮投资。为了解决 BP 初筛「量大效率低」的问题，我基于 Coze 设计了 BP 打分 Agent，将初筛效率提升数倍；同时用 Cursor、Octoparse、n8n 等工具搭建了 GitHub 项目筛选与 mapping 系统、硅谷某孵化器项目洞察分析，和行业资讯自动抓取工作流，让团队把更多精力放在深度判断上。研究端，我完成了开源项目投资策略与 AI Infra 细分赛道两份研究报告。实习期间跟进 50+ 项目评估，有项目成功投出。",
       from: "2025.06",
       to: "2025.10"
     },
     {
-      image: "/about/bcg.png",
       when: "PTA 实习生 | 波士顿咨询（BCG）",
       description: "在 BCG，我参与了某消费品行业客户的战略增长项目。工作以案头研究为主——查阅并分析大量行业资料，梳理品牌的品类划分逻辑、产品架构与竞争对手定位，为客户在定价与营销等策略制定上提供数据与分析支撑。",
       from: "2024.01",
       to: "2024.03"
     },
     {
-      image: "/about/qiaodou.png",
       when: "内容产品实习生 | 巧豆文化",
       description: "在巧豆文化，我参与了「动物城一爪通」项目——为上海迪士尼打造基于疯狂动物城 IP 的互动娱乐小程序。我从竞品分析入手，研究了大量 IP 数字产品案例，结合目标受众产出策略报告；随后深度参与产品策划，设计了用户养成系统与 AR 园区探索玩法。小程序上线后累计用户突破 250 万，Zootv 创意预告在小红书获赞 21 万+。",
       from: "2023.06",
@@ -58,7 +54,8 @@ export default {
       stage: "项目阶段：已部署上线",
       link: "https://github.com/Sanyuexi-JoyceChen/Joyce-personal-website",
       background: "/projects/portfolio-images/background.jpg",
-      desktop_pic: "/projects/portfolio-images/home.png",
+      images: ["/projects/portfolio-images/homepage-screenshot.png", "/projects/portfolio-images/page2-screenshot.png", "/projects/portfolio-images/page3-screenshot.png", "/projects/portfolio-images/page4-screenshot.png"],
+      desktop_pic: "",
       mobile_pic: ""
     },
     {
@@ -86,9 +83,9 @@ export default {
     title: "AI 工具集",
     subtitle: "我日常使用和喜爱的 AI 产品与工具，每一个都在某个领域改变了我的工作方式。",
     tools: [
-      { name: "Claude Code", logoDomain: "anthropic.com", url: "https://docs.anthropic.com/en/docs/claude-code", desc: "AI 编程终端，代码理解与生成的天花板", large: true },
+      { name: "Claude Code", logoDomain: "claude.ai", url: "https://docs.anthropic.com/en/docs/claude-code", desc: "AI 编程终端，代码理解与生成的天花板", large: true },
       { name: "Notion AI", logoDomain: "notion.so", url: "https://notion.so", desc: "笔记与知识管理的 AI 升级", large: true },
-      { name: "NotebookLM", logoDomain: "notebooklm.google.com", url: "https://notebooklm.google.com", desc: "Google 出品，文档对话与音频摘要神器", large: false },
+      { name: "NotebookLM", logoDomain: "notebooklm.google", url: "https://notebooklm.google.com", desc: "Google 出品，文档对话与音频摘要神器", large: false },
       { name: "Typeless", logoDomain: "typeless.com", url: "https://typeless.com", desc: "AI 语音听写，说话比打字快 4 倍", large: true },
       { name: "Pencil", logoDomain: "pencil.dev", url: "https://www.pencil.dev", desc: "在画布上设计，直接落地为代码", large: false },
       { name: "Den", logoDomain: "getden.io", url: "https://getden.io", desc: "自然语言构建 AI Agent，零代码自动化", large: true },

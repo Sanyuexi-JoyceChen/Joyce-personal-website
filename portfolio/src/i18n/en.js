@@ -22,28 +22,24 @@ export default {
 
   aboutMe: [
     {
-      image: "/about/gensmo.png",
       when: "AI Product Intern | GENSMO",
       description: "GENSMO is a leading AI fashion app in North America with over a million downloads. I led two core initiatives: building Couple Try-on, a dual AI try-on feature from zero to one that achieved the app's highest next-day retention; and iterating on Savyo, an independent web product where I identified key user pain points and designed solutions to help validate PMF in its seed stage.",
       from: "2025.10",
       to: "2026.02"
     },
     {
-      image: "/about/atom.png",
       when: "AI Investment Intern | Atom VC",
       description: "At Atom VC, I focused on angel-round AI investments. To tackle inefficient BP screening, I built a Scoring Agent on Coze that boosted efficiency several times over. I also developed a GitHub project mapping system, accelerator portfolio analysis, and an automated news workflow using Cursor, Octoparse, and n8n. I authored two reports on open-source investment strategy and AI Infra sub-sectors, and followed 50+ project evaluations with deals successfully invested.",
       from: "2025.06",
       to: "2025.10"
     },
     {
-      image: "/about/bcg.png",
       when: "PTA Intern | BCG",
       description: "At BCG, I joined a strategic growth project for a consumer goods client. My work focused on desk research \u2014 analyzing industry materials, mapping brand category logic, product architecture, and competitor positioning to support pricing and marketing decisions.",
       from: "2024.01",
       to: "2024.03"
     },
     {
-      image: "/about/qiaodou.png",
       when: "Content Product Intern | Qiaodou Culture",
       description: "At Qiaodou Culture, I worked on Zootopia One Paw \u2014 an interactive mini-program for Shanghai Disneyland based on the Zootopia IP. I led competitive analysis across IP digital products, then designed the user nurturing system and AR park exploration features. The mini-program reached 2.5M+ users, with its Zootv trailer earning 210K+ likes on Xiaohongshu.",
       from: "2023.06",
@@ -58,7 +54,8 @@ export default {
       stage: "Status: Deployed & Live",
       link: "https://github.com/Sanyuexi-JoyceChen/Joyce-personal-website",
       background: "/projects/portfolio-images/background.jpg",
-      desktop_pic: "/projects/portfolio-images/home.png",
+      images: ["/projects/portfolio-images/homepage-screenshot.png", "/projects/portfolio-images/page2-screenshot.png", "/projects/portfolio-images/page3-screenshot.png", "/projects/portfolio-images/page4-screenshot.png"],
+      desktop_pic: "",
       mobile_pic: ""
     },
     {
@@ -86,9 +83,9 @@ export default {
     title: "AI Toolkit",
     subtitle: "AI products and tools I use and love — each one has changed how I work in its own way.",
     tools: [
-      { name: "Claude Code", logoDomain: "anthropic.com", url: "https://docs.anthropic.com/en/docs/claude-code", desc: "AI coding terminal — the ceiling for code understanding and generation", large: true },
+      { name: "Claude Code", logoDomain: "claude.ai", url: "https://docs.anthropic.com/en/docs/claude-code", desc: "AI coding terminal — the ceiling for code understanding and generation", large: true },
       { name: "Notion AI", logoDomain: "notion.so", url: "https://notion.so", desc: "Notes and knowledge management, supercharged by AI", large: true },
-      { name: "NotebookLM", logoDomain: "notebooklm.google.com", url: "https://notebooklm.google.com", desc: "By Google — chat with docs and generate audio summaries", large: false },
+      { name: "NotebookLM", logoDomain: "notebooklm.google", url: "https://notebooklm.google.com", desc: "By Google — chat with docs and generate audio summaries", large: false },
       { name: "Typeless", logoDomain: "typeless.com", url: "https://typeless.com", desc: "AI voice dictation — speak 4x faster than you type", large: true },
       { name: "Pencil", logoDomain: "pencil.dev", url: "https://www.pencil.dev", desc: "Design on canvas, land in code", large: false },
       { name: "Den", logoDomain: "getden.io", url: "https://getden.io", desc: "Build AI agents in natural language, zero code automation", large: true },
