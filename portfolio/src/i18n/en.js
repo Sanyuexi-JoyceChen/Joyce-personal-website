@@ -41,7 +41,7 @@ export default {
     },
     {
       when: "Content Product Intern | Qiaodou Culture",
-      description: "At Qiaodou Culture, I worked on Zootopia One Paw \u2014 an interactive mini-program for Shanghai Disneyland based on the Zootopia IP. I led competitive analysis across IP digital products, then designed the user nurturing system and AR park exploration features. The mini-program reached 2.5M+ users, with its Zootv trailer earning 210K+ likes on Xiaohongshu.",
+      description: "At Qiaodou Culture, I worked on Zootopia One Paw \u2014 an interactive mini-program for Shanghai Disneyland based on the Zootopia IP. I led competitive analysis across IP digital products, then designed key engagement features and interactive experiences for the mini-program. The mini-program reached 2.5M+ users, with its promotional content earning 210K+ likes on Rednote.",
       from: "2023.06",
       to: "2023.09"
     }
