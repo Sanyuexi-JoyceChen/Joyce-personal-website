@@ -1,4 +1,5 @@
 <script setup>
+import { Analytics } from '@vercel/analytics/vue';
 import ScrollBar from '@/components/Scrollbar.vue';
 import LiquidNavbar from '@/components/LiquidNavbar.vue';
 import LiquidFilter from '@/filter/LiquidFilter.vue';
@@ -81,6 +82,7 @@ onMounted(async () => {
 </script>
 
 <template>
+  <Analytics />
   <audio ref="bgmRef" src="/Joycebgm.mp3" loop preload="auto"></audio>
   <button
     @click="toggleBgm"
