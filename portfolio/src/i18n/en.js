@@ -22,35 +22,35 @@ export default {
 
   aboutMe: [
     {
-      when: "AI Product Intern | GENSMO",
-      description: "GENSMO is a leading AI fashion app in North America with over a million downloads. I led two core initiatives: building Couple Try-on, a dual AI try-on feature from zero to one that achieved the app's highest next-day retention; and iterating on Savyo, an independent web product where I identified key user pain points and designed solutions to help validate PMF in its seed stage.",
-      from: "2025.10",
-      to: "2026.02"
+      when: "AI Product | Consumer Technology Team",
+      description: "Contributed to AI consumer products from concept through launch, covering user research, interaction design, and iterative validation. Turned user feedback and behavioral signals into clearer and more useful product experiences.",
+      from: "2025.xx",
+      to: "2026.xx"
     },
     {
-      when: "AI Investment Intern | Atom VC",
-      description: "At Atom VC, I focused on angel-round AI investments. To tackle inefficient BP screening, I built a Scoring Agent on Coze that boosted efficiency several times over. I also developed a GitHub project mapping system, accelerator portfolio analysis, and an automated news workflow using Cursor, Octoparse, and n8n. I authored two reports on open-source investment strategy and AI Infra sub-sectors, and followed 50+ project evaluations with deals successfully invested.",
-      from: "2025.06",
-      to: "2025.10"
+      when: "Technology Research | Early-stage Team",
+      description: "Researched emerging technologies and early products, organized fragmented information, and used automation to improve repetitive workflows. Produced structured materials for more efficient comparison and decision-making.",
+      from: "2025.xx",
+      to: "2025.xx"
     },
     {
-      when: "PTA Intern | BCG",
-      description: "At BCG, I joined a strategic growth project for a consumer goods client. My work focused on desk research \u2014 analyzing industry materials, mapping brand category logic, product architecture, and competitor positioning to support pricing and marketing decisions.",
-      from: "2024.01",
-      to: "2024.03"
+      when: "Strategy Research | Consumer Project",
+      description: "Supported consumer-industry growth research by mapping categories, product structures, and competitive landscapes from public information.",
+      from: "2024.xx",
+      to: "2024.xx"
     },
     {
-      when: "Content Product Intern | Qiaodou Culture",
-      description: "At Qiaodou Culture, I worked on Zootopia One Paw \u2014 an interactive mini-program for Shanghai Disneyland based on the Zootopia IP. I led competitive analysis across IP digital products, then designed key engagement features and interactive experiences for the mini-program. The mini-program reached 2.5M+ users, with its promotional content earning 210K+ likes on Rednote.",
-      from: "2023.06",
-      to: "2023.09"
+      when: "Content Product | Interactive Experience Team",
+      description: "Worked on a general-audience interactive product across case research, audience analysis, interaction concepts, and growth ideas, collaborating through launch and iteration.",
+      from: "2023.xx",
+      to: "2023.xx"
     }
   ],
 
   projects: [
     {
       title: "Portfolio",
-      description: "Portfolio is the website you're browsing right now. I believe the best way to introduce yourself in the AI era is \"show, don't tell\" — and that's how this personal site came to be. It reflects my attitude, aesthetics, and practice, serving as the best proof that I'm an AI builder. This site is built on the open-source project <a href='https://github.com/Cyprien-png/portfolio' target='_blank' class='underline hover:text-white/80'>jaquier.dev</a> — thanks to its contributors.",
+      description: "Portfolio is a personal website for product thinking, visual expression, and creative practice. It focuses on work and process, showing how an AI builder turns ideas into usable products. The site is built on the open-source project <a href='https://github.com/Cyprien-png/portfolio' target='_blank' class='underline hover:text-white/80'>jaquier.dev</a>.",
       stage: "Status: Deployed & Live",
       link: "https://github.com/Sanyuexi-JoyceChen/Joyce-personal-website",
       background: "/projects/portfolio-images/background.jpg",
@@ -60,7 +60,7 @@ export default {
     },
     {
       title: "Poker Analysis",
-      description: "A data-driven review tool to help poker beginners improve their game. When I first started playing Texas Hold'em, I found there was no free tool for beginners to review hand histories and improve decision quality — so I built one. It imports hand histories exported from PokerNow, automatically parses them, and performs preflop decision auditing, postflop loss analysis, and GTO comparison to help identify and correct decision-making issues. Built with React Native + Expo, supporting iOS / Android / Web.",
+      description: "A data-driven review tool for poker beginners. It imports hand histories, parses them, and performs preflop decision auditing, postflop loss analysis, and GTO comparison to help identify and correct decision-making issues. Built with React Native + Expo for iOS, Android, and Web.",
       stage: "Status: Deployed & Live",
       link: "https://pokeranalysis.vercel.app/",
       background: "/projects/pokeranalysis/background.jpg",
@@ -70,7 +70,7 @@ export default {
     },
     {
       title: "FIRE Simulator",
-      description: "This personal finance tool solves two questions I had: where does my money go, and how long until I can FIRE (Financial Independence, Retire Early)? A personal finance mini-tool: just upload your transaction CSV exported from WeChat Pay or Alipay — no manual logging needed. It automatically summarizes spending by category, estimates monthly expenses, and highlights the biggest single expenditures. Then enter your savings, annual income, and expected investment returns, and it estimates how many years until you reach FIRE and your current progress.",
+      description: "A local-first personal finance planning tool. Users can import a transaction CSV to summarize spending categories, monthly expenses, and major purchases, then enter sample assets, income, and expected returns to simulate progress toward FIRE. All financial figures shown are demonstration data.",
       stage: "Status: Personal Use, Local Deployment",
       link: "",
       background: "/projects/fire-simulator/background.jpg",

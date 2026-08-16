@@ -1,6 +1,8 @@
 <script setup>
 import { computed } from "vue";
 
+const isMiniTool = import.meta.env.VITE_MINITOOL === 'true';
+
 const props = defineProps({
     text: { type: String, required: true },
     href: { type: String, default: "#" },
@@ -11,7 +13,7 @@ const letters = computed(() => props.text.split('').map(l => l === ' ' ? '\u00A0
 </script>
 
 <template>
-    <a :href="href" :target="target" class="group flex">
+    <component :is="isMiniTool ? 'span' : 'a'" :href="isMiniTool ? undefined : href" :target="isMiniTool ? undefined : target" class="group flex">
         <div class="relative overflow-hidden">
             <span class="flex">
                 <span v-for="(l, i) in letters" :key="i"
@@ -29,5 +31,5 @@ const letters = computed(() => props.text.split('').map(l => l === ' ' ? '\u00A0
                 </span>
             </span>
         </div>
-    </a>
+    </component>
 </template>

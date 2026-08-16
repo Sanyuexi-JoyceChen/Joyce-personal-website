@@ -23,7 +23,7 @@ npm run dev
 | Section | Description |
 |---------|-------------|
 | **Home** | Hero statement with 3D particle background and rotating keywords |
-| **Career** | Timeline of internship experiences at GENSMO, Atom VC, BCG, and Qiaodou Culture |
+| **Career** | An anonymized timeline of product, research, strategy, and interactive-content experience |
 | **Vibe Coding** | Three personal projects displayed in a retro 3D rotating monitor — Portfolio, Poker Analysis, and FIRE Simulator |
 | **AI Toolkit** | A bento grid of 10 AI tools I use daily, from Claude Code to Cursor |
 | **Contact** | Email, phone, LinkedIn, Rednote, and GitHub |
@@ -47,5 +47,5 @@ This project is built on the open-source portfolio by [**Cyprien Jaquier**](http
 ## **📬 Contact**
 
 - Email: shaojinchen0593@gmail.com
-- LinkedIn: [Shaojin Chen](https://www.linkedin.com/in/shaojin-chen-5a6192321)
+- LinkedIn: [Joyce](https://www.linkedin.com/in/shaojin-chen-5a6192321)
 - GitHub: [Sanyuexi-JoyceChen](https://github.com/Sanyuexi-JoyceChen)

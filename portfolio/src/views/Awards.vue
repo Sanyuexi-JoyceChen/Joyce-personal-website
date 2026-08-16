@@ -6,8 +6,11 @@ import { useI18n } from '@/i18n';
 
 const { msg } = useI18n();
 const aiTools = computed(() => msg.value.aiTools);
+const isMiniTool = import.meta.env.VITE_MINITOOL === 'true';
 
-const logoUrl = (domain) => `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+const logoUrl = (domain) => isMiniTool
+  ? './joycelogo.png'
+  : `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
 </script>
 
 <template>
@@ -31,12 +34,13 @@ const logoUrl = (domain) => `https://www.google.com/s2/favicons?domain=${domain}
 
           <!-- Bento Grid -->
           <div class="bento-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            <a
+            <component
+              :is="isMiniTool ? 'div' : 'a'"
               v-for="tool in aiTools.tools"
               :key="tool.name"
-              :href="tool.url"
-              target="_blank"
-              rel="noopener noreferrer"
+              :href="isMiniTool ? undefined : tool.url"
+              :target="isMiniTool ? undefined : '_blank'"
+              :rel="isMiniTool ? undefined : 'noopener noreferrer'"
               class="group relative rounded-3xl filter before:rounded-3xl before:pointer-events-none backdrop-filter-[url('#liquidFilter')] p-5 flex flex-col justify-between transition-all duration-300 hover:scale-[1.02] cursor-pointer overflow-hidden"
               :class="{
                 'sm:col-span-2': tool.large,
@@ -57,7 +61,7 @@ const logoUrl = (domain) => `https://www.google.com/s2/favicons?domain=${domain}
                 <h3 class="font-rubik text-xs md:text-sm">{{ tool.name }}</h3>
                 <p class="text-white/75 text-xs md:text-sm mt-1.5 leading-relaxed">{{ tool.desc }}</p>
               </div>
-            </a>
+            </component>
           </div>
         </div>
       </div>

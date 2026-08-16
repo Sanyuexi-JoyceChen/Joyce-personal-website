@@ -80,7 +80,7 @@ const init = () => {
 
 const loadImageAndCreateParticles = () => {
   const img = new Image();
-  img.src = "/backgrounds/mountains.jpg";
+  img.src = "./backgrounds/mountains.jpg";
 
   img.onload = () => {
     const canvas = document.createElement('canvas');

@@ -3,6 +3,19 @@
 
 @import "tailwindcss";
 
+html {
+  touch-action: manipulation;
+}
+
+body {
+  -webkit-touch-callout: none;
+}
+
+#container {
+  padding-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
+  padding-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
+}
+
 @theme {
   --font-rubik: "Rubik Mono One", monospace;
   --font-ledger: "Ledger", serif;

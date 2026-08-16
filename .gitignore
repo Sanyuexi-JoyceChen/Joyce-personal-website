@@ -29,6 +29,11 @@ pnpm-debug.log*
 # Cursor / Claude
 .cursor/
 .claude/
+.codex/
+
+# Local build and validation artifacts
+portfolio/dist-minitool/
+work/
 
 # Test
 coverage/

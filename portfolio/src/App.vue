@@ -18,6 +18,7 @@ import { AnimatedComponent } from '@/services/AnimatedComponent';
 import { useI18n } from '@/i18n';
 
 const { msg } = useI18n();
+const isMiniTool = import.meta.env.VITE_MINITOOL === 'true';
 
 const { containerRef, contentRef } = provideScrollContext();
 const { setPositions } = useCursorContext();
@@ -58,8 +59,10 @@ const removeInteractionListeners = () => {
 };
 
 onMounted(async () => {
-  const trackerUrl = import.meta.env.VITE_TRACKER_URL;
-  if (trackerUrl) await fetch(trackerUrl)
+  if (!isMiniTool) {
+    const trackerUrl = import.meta.env.VITE_TRACKER_URL;
+    if (trackerUrl) await fetch(trackerUrl)
+  }
   component.value = new AnimatedComponent();
   component.value.tick = setCursorPos;
   component.value.addAnimationTrigger(window, "mousemove");
@@ -68,7 +71,7 @@ onMounted(async () => {
   windowComponent.value.tick = resetWidth;
   windowComponent.value.addAnimationTrigger(window, "resize");
 
-  const audio = bgmRef.value;
+  const audio = isMiniTool ? null : bgmRef.value;
   if (audio) {
     audio.volume = 0.3;
     audio.play().then(() => {
@@ -81,8 +84,9 @@ onMounted(async () => {
 </script>
 
 <template>
-  <audio ref="bgmRef" src="/Joycebgm.mp3" loop preload="auto"></audio>
+  <audio v-if="!isMiniTool" ref="bgmRef" src="./Joycebgm.mp3" loop preload="auto"></audio>
   <button
+    v-if="!isMiniTool"
     @click="toggleBgm"
     class="bgm-btn fixed bottom-5 right-5 z-50 w-8 h-8 rounded-full flex items-center justify-center bg-white/10 text-white/40 hover:bg-white/20 hover:text-white/70 backdrop-blur-sm transition-all duration-300 cursor-pointer"
     :title="bgmPlaying ? 'Mute' : 'Play music'"
@@ -114,7 +118,7 @@ onMounted(async () => {
       <Contact />
       <footer class="relative">
         <span class="absolute bottom-0 text-sm p-[4dvw] opacity-60 text-white">
-          <CustomA :text="msg.readCode" href="https://github.com/Sanyuexi-JoyceChen/Joyce-personal-website" target="_blank" />
+          <CustomA v-if="!isMiniTool" :text="msg.readCode" href="https://github.com/Sanyuexi-JoyceChen/Joyce-personal-website" target="_blank" />
         </span>
       </footer>
     </div>
