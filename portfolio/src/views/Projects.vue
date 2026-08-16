@@ -10,7 +10,13 @@ import RetroMonitor from '@/components/RetroMonitor.vue';
 import { useI18n } from '@/i18n';
 
 const { msg } = useI18n();
-const projects = computed(() => msg.value.projects);
+const isMiniTool = import.meta.env.VITE_MINITOOL === 'true';
+const projects = computed(() => msg.value.projects.map((project) => ({
+    ...project,
+    description: isMiniTool
+        ? project.description.replace(/<a\b[^>]*>(.*?)<\/a>/gi, '$1')
+        : project.description,
+})));
 
 const { setImage, setIsUrl, setIsOpen, setIsSmall } = useImageAsCursor()
 const { isOpen, toggle, openIndex } = useSingleToggle()
@@ -52,9 +58,9 @@ onMounted(() => {
                                         <p v-if="project.stage" class="text-xs lg:text-sm text-white/60 mt-3">{{ project.stage }}</p>
                                     </div>
                                 </div>
-                                <a @mouseenter="setIsUrl(true)" @mouseleave="setIsUrl(false)" :href="project.link" class="relative w-full flex bg-center bg-cover bg-white" target="_blank">
+                                <component :is="isMiniTool ? 'div' : 'a'" @mouseenter="setIsUrl(true)" @mouseleave="setIsUrl(false)" :href="isMiniTool ? undefined : project.link" class="relative w-full flex bg-center bg-cover bg-white" :target="isMiniTool ? undefined : '_blank'">
                                     <CustomA :text="msg.viewMore" :href="project.link" target="_blank" class="z-10 h-full w-full p-4"/>
-                                </a>
+                                </component>
                             </div>
                         </div>
 

@@ -56,7 +56,7 @@ onBeforeUnmount(() => {
 
                 <div class="h-full w-full flex justify-center items-end absolute bottom-0 pointer-events-none" :style="`transform: translateY(${translationRef}px)`">
                     <div class="relative w-2/3 md:w-1/2 lg:w-2/5">
-                        <img src="/contact/portrait.png" alt="" data-parallax-value=".15" class="w-full h-auto object-contain parallax"/>
+                        <img :src="'./contact/portrait.png'" alt="" data-parallax-value=".15" class="w-full h-auto object-contain parallax"/>
                     </div>
                 </div>
             </div>

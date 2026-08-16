@@ -10,6 +10,7 @@
     "dev": "vite",
     "dev:5174": "vite --port 5174",
     "build": "vite build",
+    "build:minitool": "VITE_MINITOOL=true vite build --config vite.minitool.config.js",
     "preview": "vite preview"
   },
   "dependencies": {
